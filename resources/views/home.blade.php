@@ -56,12 +56,12 @@
         </div>
         <div class="col">
             <div style='float:right;'>
-                <button type='button' data-toggle='modal' data-target='#exampleModalLong'><img src="{{ URL::asset('images/filter.png') }}" style='width:32px; height:32px;margin-top:8px;' alt=""></a>
+                <a data-toggle='modal' data-target='#filter'><img src="{{ URL::asset('images/filter.png') }}" style='width:32px; height:32px;margin-top:8px;' alt=""></a>
             </div>
         </div>
     </div>
 
-    <div class='container' style='text-align:center;overflow-y:scroll;max-height: 750px;'>
+    <div class='container' style='text-align:center;overflow-y:scroll;max-height: 100%;'>
         <div>
         
         </div>
@@ -69,22 +69,25 @@
         <div>
         
         </div>
+
         <div>
         
         </div>
+
         <div>
         
         </div>
+
         <div>
         
         </div>
 
     </div>
-    <button type="button" class='btn btn-primary new-btn' data-toggle="modal" data-target="#exampleModalLong " style="position:fixed; bottom:0px;right:0px;margin:20px;border-radius:50px;">New</button>
-    <button type="button" class='btn btn-success new-btn' data-toggle="modal" data-target="#exampleModalLong " style="position:fixed; bottom:0px;left:0px;margin:20px;border-radius:50px;width:58.02px; height:38px;">Fit</button>
+    <button type="button" class='btn btn-primary new-btn' data-toggle="modal" data-target="#new" style="position:fixed; bottom:0px;right:0px;margin:20px;border-radius:50px;">New</button>
+    <button type="button" class='btn btn-success new-btn' data-toggle="modal" data-target="#fit" style="position:fixed; bottom:0px;left:0px;margin:20px;border-radius:50px;width:58.02px; height:38px;">Fit</button>
     
-    // New item form
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<!-- Filter Form -->
+    <div class="modal fade" id="filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <form action="">
@@ -105,8 +108,8 @@
         </div>
     </div>
     
-    // Fit Form
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <!-- Fit Form -->
+    <div class="modal fade" id="fit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <form action="">
@@ -127,8 +130,8 @@
         </div>
     </div>
 
-    //Filter Form
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <!-- New Item Form -->
+    <div class="modal fade" id="new" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <form action="">

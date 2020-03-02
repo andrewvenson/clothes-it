@@ -50,7 +50,7 @@
     </style>
 </head>
 <body>
-    <div class="row" style='height:50px; background-color:lightgray;'>
+    <div class="row" style='height:50px; background-color:lightgray;position:fixed;top:0;width:100%;'>
         <div class="col">
             <h3>ClothesIt</h3>
         </div>
@@ -61,7 +61,7 @@
         </div>
     </div>
 
-    <div class='container' style='text-align:center;overflow-y:scroll;max-height: 100%;'>
+    <div class='container' style='text-align:center;overflow-y:scroll;height: 100%;margin-top:50px;'>
         <div>
         
         </div>

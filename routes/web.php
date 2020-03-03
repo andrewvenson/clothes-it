@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', "ClothController@items");
+
+Route::get('/', "ClothController@items")->name('home');
 
 Route::post('/', "ClothController@store");

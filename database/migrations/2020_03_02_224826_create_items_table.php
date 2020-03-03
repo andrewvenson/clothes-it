@@ -19,8 +19,8 @@ class CreateItemsTable extends Migration
             $table->integer('qty');
             $table->string('color');
             $table->string('tag');
-            $table->integer('private');
-            $table->integer('public');
+            $table->integer('private')->default('1');
+            $table->integer('public')->default('0');
             $table->string('image')->nullable();
 
             $table->timestamps();

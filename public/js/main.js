@@ -14,9 +14,14 @@ $("#close-dropitm").click(function(){
 });
 
 $('.more').click(function(){
-    if($(".feed div").css('display') == "block"){
-    $(".feed div").css('display', 'none');
+
+    console.log(this.id);
+    var photo = "." + this.id + " div";
+
+    
+    if($(photo).css('display') == 'none'){
+        $(photo).css('display', 'block');
     }else{
-        $(".feed div").css('display', 'block');
+        $(photo).css('display', 'none');
     }
 });

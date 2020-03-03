@@ -20,6 +20,11 @@
             height: 100px;
         }
 
+        .feed div a{
+            color: white !important;
+            font-weight:bold;
+        }
+
         .mb-fit div{
             width: 300px; 
             height: 300px;  
@@ -119,7 +124,7 @@
                 <a href="#" ><img src="images/search.png" style='width:24px; height:24px;' alt=""></a>
             </div>
         </div>
-        <div class="col">
+        <div class="col" style='text-align:center;'>
 
             <a href="{{url('/')}}">
                 <h3>clothesIt</h3>
@@ -154,20 +159,20 @@
        
             @foreach($items as $item)
             <div style='overflow:hidden;'>
-                <div class='feed' style="text-align:center; background: url(uploads/{{$item->image}}); background-size:cover;">
-                    <div style='background-color:red; opacity: .6'>
-                        <a href="#">Delete</a>
+                <div class='feed {{$item->id}}' style="text-align:center; background: url(uploads/{{$item->image}}); background-size:cover;">
+                    <div style='background-color:red; padding:40px;opacity: .6'>
+                        <a>Delete</a>
                     </div>
-                    <div style='background-color:black; opacity: .6'>
-                        <a href="#">Edit</a>
+                    <div style='background-color:black; opacity: .6; padding:40px'>
+                        <a>Edit</a>
                     </div>
-                    <div style='background-color:black; opacity: .6'>
-                        <a href="#">Add to fit</a>
+                    <div style='background-color:#1f1f1f; opacity: .6;padding:40px'>
+                        <a>Add to fit</a>
                     </div>
                 </div>
                 <a href="#" style='color:white;text-decoration:none;float:left;'>{{$item->name}}</a>
                 
-                <a class='more' href="#" style='float:right;'><img src="images/more.png" style='width:18px;height:18px;' alt=""></a>                
+                <a class='more' id='{{$item->id}}' style='float:right;'><img src="images/more.png" style='width:18px;height:18px;' alt=""></a>                
             </div>
                 
             @endforeach
@@ -285,8 +290,6 @@
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>

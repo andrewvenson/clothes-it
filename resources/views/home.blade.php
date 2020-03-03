@@ -35,7 +35,6 @@
         }
 
         .modal-body input{
-            box-shadow: 3px 3px 7px black;
             background-color:black;
             color:white;
             border-color:#1f1f1f !important;
@@ -76,7 +75,7 @@
         }
 
         .modal-content{
-            min-height: 600px !important;
+            height: 800px;
             position:relative;
             background-color: #1f1f1f;
             color:white;
@@ -161,7 +160,7 @@
             <div style='overflow:hidden;'>
                 <div class='feed {{$item->id}}' style="text-align:center; background: url(uploads/{{$item->image}}); background-size:cover;">
                     <div style='background-color:red; padding:40px;opacity: .6'>
-                        <a>Delete</a>
+                        <a data-toggle="modal" data-target="#delete">Delete</a>
                     </div>
                     <div style='background-color:black; opacity: .6; padding:40px'>
                         <a>Edit</a>
@@ -207,6 +206,18 @@
         </div>
     </div>
     
+
+    <!-- Delete Form -->
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style='height:300px !important;'>
+                <form action="">
+                    <h5>Are you sure you want to delete this item?</h5>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Fit Form -->
     <div class="modal fade" id="fit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -252,7 +263,7 @@
             <div class="modal-content">
                 <form action="/" method='post' enctype="multipart/form-data" >
                 @csrf
-                    <div class="modal-body" style='overflow-y:scroll; overflow-x: hidden; height:525px;'>
+                    <div class="modal-body" style=' overflow-x: hidden; height:800px;'>
                         <input class='form-control' name='name' type="text" placeholder="Name">
                         <input class='form-control' name='qty' placeholder="Qty" type="text">
                         <input class='form-control' name='color' placeholder="Color" type="text">
@@ -274,10 +285,13 @@
                         <div style='height:300px; width: 328px;border-radius: 5px;margin-top:15px;background-color: black; box-shadow: 3px 4px 10px black;'>
                         
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" style='background-color: #00bcd4; border-color: #00bcd4 ; '>Add to closet</button>
+
+                        <div style='position:absolute; bottom:0; margin:10px;right:0'>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" style='background-color: #00bcd4; border-color: #00bcd4 ; '>Add to closet</button>
+                    
+                        </div>
+                        
                     </div>
                 </form>
             </div>

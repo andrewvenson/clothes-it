@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', "ClothController@items");
+
+Route::post('/', "ClothController@store");

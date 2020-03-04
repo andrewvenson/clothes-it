@@ -79,11 +79,12 @@
             margin:0px !important;
         }
 
-        h3{
+        #itm-count{
             margin: 10px 0px 0px 5px; 
             font-weight:bold;
-            color: lightgray;;
-            text-shadow: 2px 2px gray; 
+            color: lightgray;
+            font-family:arial;
+            text-shadow: 2px 2px #000;
         }
 
         body{
@@ -105,7 +106,6 @@
         }
 
         .modal-content{
-            height: 800px;
             position:relative;
             background-color: #1f1f1f;
             color:white;

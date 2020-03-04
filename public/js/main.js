@@ -1,3 +1,5 @@
+var items = 0;
+
 $("#nav-dropitm").click(function(){
 
     $(this).css('display', 'none');
@@ -51,9 +53,58 @@ $('#search-close').click(function(){
 $('.closet-btn').click(function(){
     $('.closet-so').css('display', 'block');
     $(this).css('display', 'none');
-})
+});
 
 $('.closet-so').click(function(){
     $('.closet-btn').css('display', 'block');
     $(this).css('display', 'none');
+});
+
+
+$('.fit').click(function(){
+    $('.item-bullet').css('display', 'block');
+    $('.feed').css('filter', 'brightness(0.5)');
+    $('.closet-nav').css('display', 'none');
+    $('#img-picker-nav').css('display', 'block');
+    
+});
+
+$('.cancel-picker').click(function(){
+    $('.item-bullet').css('display', 'none');
+    $('.item-bullet').css('background-color', 'lightgray');
+    items = 0;
+    $('#itm-count').text('');
+    $('.feed').css('filter', 'brightness(1)');
+    $('.closet-nav').css('display', 'block');
+    $('#img-picker-nav').css('display', 'none');
 })
+
+
+
+$('.feed').click(function(){
+    if($('.item-bullet').css('display') == 'block'){
+        if($(this).css('filter') == 'brightness(0.8)'){
+            $(this).css('filter', 'brightness(.5)');
+            $("#bullet-" + this.id).css('background-color', 'lightgray');
+            items = items - 1;
+            $('#itm-count').text(items + " items");
+        }else{
+            $(this).css('filter', 'brightness(.8)');
+            $("#bullet-" + this.id).css('background-color', 'lightgreen');
+            console.log('what')
+            console.log($(this).css('filter'));
+    
+            items = items + 1;
+            console.log(items);
+            $('#itm-count').text(items + " items");
+        }
+    
+        if(items == 0){
+            $('#itm-count').text('');
+        }
+    }
+    
+    
+});
+
+

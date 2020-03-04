@@ -5,6 +5,9 @@
             <form action="">
                 ...
             </form>
+
+            <button type="button" class="btn btn-dark" style='background-color:darkgray; border-color:darkgray;' data-dismiss="modal">Close</button>
+
         </div>
     </div>
 </div>
@@ -14,7 +17,7 @@
 <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content" style='height:300px !important;text-align:center;'>
-            <form action="" style='margin-top:25px;'>
+            <form action="" style='margin-top:30%;'>
                 <p>Are you sure you want to delete this item?</p>
 
                 <button type='submit' class='btn btn-danger'>Yes</button>
@@ -28,38 +31,20 @@
 <!-- Fit Form -->
 <div class="modal fade" id="fit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <form action="">
-                <div class="modal-header" style="position:fixed;top:0;width:95%;">
-                    <input class='form-control' placeholder="Search item..." type="text">
-                </div>
-                <div class='modal-body mb-fit' style='text-align:center;overflow-y:scroll;max-height: 455px;margin-top:65px;'>
-                    <div>
+        <div class="modal-content" style='height:500px;position:relative'>
+            <div class='modal-body'>
+                <form action="">
+                    @csrf
+                    <input class='form-control' name='name' type="text" placeholder="Name">
+                    
+                    <div class='fit-collage'>
                     
                     </div>
 
-                    <div>
-                    
-                    </div>
-
-                    <div>
-                    
-                    </div>
-
-                    <div>
-                    
-                    </div>
-
-                    <div>
-                    
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Select</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Create Outfit</button>
-                </div>
-            </form>
+                    <a style='left:0;bottom:0;position:absolute; margin:10px;' href="" data-dismiss='modal'>Close</a>
+                    <a style='right:0;bottom:0;position:absolute;margin:10px;' href="" data-dismiss='modal'>Create fit</a>
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -70,7 +55,7 @@
         <div class="modal-content">
             <form action="/" method='post' enctype="multipart/form-data" >
             @csrf
-                <div class="modal-body" style=' overflow-x: hidden; height:800px;'>
+                <div class="modal-body">
                     <input class='form-control' name='name' type="text" placeholder="Name">
                     <input class='form-control' name='qty' placeholder="Qty" type="text">
                     <input class='form-control' name='color' placeholder="Color" type="text">
@@ -89,14 +74,13 @@
                         <input type="file" name="image"  accept="image/*" aria-describedby="fileHelp" style='box-shadow: none !important;background-color: #1f1f1f !important;'>
                     </div>
                         
-                    <div style='height:300px; width: 328px;border-radius: 5px;margin-top:15px;background-color: black; box-shadow: 3px 4px 10px black;'>
+                    <div style='height:250px; width: 100%;border-radius: 5px;margin-top:15px;background-color: darkgray;'>
                     
                     </div>
 
                     <div style='position:absolute; bottom:0; margin:10px;right:0'>
-                        <button type="button" class="btn btn-dark" style='background-color:darkgray; border-color:darkgray;' data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-dark" style='background-color:black; border-color:black;' data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-dark">Add to closet</button>
-        
                     </div>
                 </div>
             </form>

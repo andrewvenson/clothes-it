@@ -15,3 +15,12 @@
 Route::get('/', "ClothController@items")->name('home');
 
 Route::post('/', "ClothController@store");
+
+Route::get('/feed', function(){
+    return view('feed');
+});
+
+
+Route::get('/profile', function(){
+    return view('feed');
+});

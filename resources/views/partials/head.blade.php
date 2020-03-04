@@ -136,6 +136,13 @@
             padding:5px;
         }
 
+    
+        .col img{
+            filter:drop-shadow(2px 2px 5px #000);
+            width:24px;
+            height:24px;
+        }
+
         
     </style>
 </head>

@@ -47,3 +47,13 @@ $('#search-close').click(function(){
     $('.nav-title').css('display', 'block');
     $('#search-btn').css('display', 'block');
 });
+
+$('.closet-btn').click(function(){
+    $('.closet-so').css('display', 'block');
+    $(this).css('display', 'none');
+})
+
+$('.closet-so').click(function(){
+    $('.closet-btn').css('display', 'block');
+    $(this).css('display', 'none');
+})

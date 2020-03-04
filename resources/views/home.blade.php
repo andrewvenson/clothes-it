@@ -43,6 +43,13 @@
     
 </div>
 
+<div class='closet-btn' style='position:fixed; right: -60px;opacity: .8;  top: 50%;box-shadow: 2px 3px 4px black;z-index: 9999999;  background-color:#1c1b17; height: 100px; width: 100px; border-radius: 100%;'>
+    <img src="/images/popleft.png" alt="" style='width: 25px; height: 25px;position:fixed;right:0;margin-top:38px; '>
+</div>
+
+<div class='closet-so' style='position:fixed;opacity: .7;display:none;  right: -40px; top: 50%;box-shadow: 2px 3px 4px black;z-index: 9999999;  background-color:#1c1b17; height: 100px; width: 100%; border-radius: 50px;'>
+    <img src="/images/popright.png" alt="" style='width: 25px; height: 25px;position:fixed;right:0;margin-top:38px;'>
+</div>
 <!-- 
 
 <button type="button" class='btn btn-secondary new-btn' data-toggle="modal" data-target="#new" style="background-color:black !important; border-color: black !important;position:fixed; bottom:0px;right:0px;margin:5px 5px 57px 5px;border-radius:100%;height:50px;">New</button>

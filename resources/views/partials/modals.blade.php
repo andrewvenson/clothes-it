@@ -17,8 +17,8 @@
             <form action="" style='margin-top:25px;'>
                 <p>Are you sure you want to delete this item?</p>
 
-                <button type='submit' class='btn btn-dark'>Yes</button>
-                <button type='submit' class='btn btn-secondary'>No</button>
+                <button type='submit' class='btn btn-danger'>Yes</button>
+                <button type='button' data-dismiss="modal" class='btn btn-dark'>No</button>
 
             </form>
         </div>

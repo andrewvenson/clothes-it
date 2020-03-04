@@ -1,10 +1,14 @@
-<div class="row" style='height:50px; background-color:#1f1f1f;position:fixed;top:0;width:100%;'>
+<div class="row" style='height:50px; background-color:#1f1f1f;position:fixed;top:0;width:100%;z-index:999;'>
     <div class='col' >
         <div style='margin-top:10px;'>
-            <a href="#" ><img src="images/search.png" style='width:24px; height:24px;' alt=""></a>
+            <a id='search-close' style='position:fixed; top:12px; left: 16px;display:none;'><img style='width:20px; height:20px;' src="images/searchclose.png" alt=""></a>
+            <a id='search-btn' href="#" ><img src="images/search.png" style='width:24px; height:24px;' alt=""></a>
+            <a id='search-inp-btn' style='position:fixed; top:12px; left: 263px;display:none;'><img style='width:20px; height:20px;' src="images/searchinput.png" alt=""></a>
+            <input id='search-inp' type="text" placeholder="Search by item, fit, color, tag... " style='background-color:black; color: white;display:none;padding-left:23px;width:275px;'>
+
         </div>
     </div>
-    <div class="col" style='text-align:center;'>
+    <div class="col nav-title" style='text-align:center;'>
 
         <a href="{{url('/')}}">
             <h3>clothesIt</h3>
@@ -13,7 +17,7 @@
     <div class="col">
         <div style="float:right;margin-top:10px;z-index: 100;">
             <a id="nav-dropitm" style="float:right;"><img src="{{URL::asset('images/menu.png')}}"  style='height:25px; width:25px;' alt=""></a>
-            <a id="close-dropitm" style="display:none;float:right;"><img src="{{URL::asset('images/close.png')}}" alt=""></a>
+            <a id="close-dropitm" style="display:none;float:right;"><img src="{{URL::asset('images/close.png')}}" style='height:25px; width:25px;' alt=""></a>
         </div>
     </div>
 </div>

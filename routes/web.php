@@ -21,6 +21,6 @@ Route::get('/feed', function(){
 });
 
 
-Route::get('/profile', function(){
-    return view('feed');
+Route::get('/fits', function(){
+    return view('fits');
 });

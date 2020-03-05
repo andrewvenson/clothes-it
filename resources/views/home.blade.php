@@ -3,14 +3,14 @@
 @section('content')
 <div class='closet-nav' style='text-align:center;width:100%; height: 35px;box-shadow: 0 4px 2px -2px black;background-color:#1a1a1a; position:fixed; top: 50px;z-index:999;'>
         
-        <a href="#" style='position:fixed; left: 75px;margin-top:5px;'>Articles</a>
+        <a id='articles' href="{{url('/')}}" style='position:fixed; left: 75px;margin-top:5px;'>Articles</a>
         
-        <a href="#" style='position:fixed; right: 75px;margin-top:5px;'>Fits</a>
+        <a id='fits' href="{{url('/fits')}}" style='position:fixed; right: 75px;margin-top:5px;color:gray;'>Fits</a>
 </div>
 
 <div id='img-picker-nav'  style='width:100%;height:35px;display:none;text-align:center;background-color: black;position:fixed;top:50px;z-index:999;box-shadow: 3px 4px 8px black;opacity:.9;'>
     <a data-toggle='modal' data-target="#fit" style="position:fixed; right: 5px;color:white;margin-top:5px; text-decoration:none; font-weight:bold;">Done</a>
-    <a id='itm-count' style="position:fixed;color:lightgreen;margin-top:5px;right:42%; text-decoration:none; font-weight:bold;"></a>
+    <a id='itm-count' style="position:fixed;color:white;margin-top:8px;right:45%; text-decoration:none;font-size: 14px;"></a>
     
     <a class='cancel-picker' style="margin-top:5px;position:fixed; color:white; z-index:999;left: 5px; text-decoration:none; font-weight:bold;">Cancel</a>
 </div>
@@ -67,9 +67,5 @@
     
     </div>
 </div>
-<!-- 
-
-<button type="button" class='btn btn-secondary new-btn' data-toggle="modal" data-target="#new" style="background-color:black !important; border-color: black !important;position:fixed; bottom:0px;right:0px;margin:5px 5px 57px 5px;border-radius:100%;height:50px;">New</button>
-<button type="button" class='btn btn-dark new-btn' data-toggle="modal" data-target="#fit" style="position:fixed; bottom:0px;left:0px;margin:5px 5px 57px 5px;border-radius:100%;width:58.02px; height:50px;">Fit</button> -->
 @endsection
 

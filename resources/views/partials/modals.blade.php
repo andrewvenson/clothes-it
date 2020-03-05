@@ -32,14 +32,15 @@
 <div class="modal fade" id="fit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content" style='height:500px;position:relative'>
-            <div class='modal-body'>
+            <div class='modal-body' style='padding:10px !important;'>
                 <form action="">
                     @csrf
                     <input class='form-control' name='name' type="text" placeholder="Name">
                     
-                    <div class='fit-collage' style='border:1px solid gray;'>
+                    <div class='row fit-collage' style='text-align:center;padding:0px;'>
                     
                     </div>
+                    
 
                     <a style='left:0;bottom:0;position:absolute; margin:10px;' href="" data-dismiss='modal'>Close</a>
                     <a style='right:0;bottom:0;position:absolute;margin:10px;' href="" data-dismiss='modal'>Create fit</a>

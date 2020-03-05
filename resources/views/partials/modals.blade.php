@@ -37,7 +37,7 @@
                     @csrf
                     <input class='form-control' name='name' type="text" placeholder="Name">
                     
-                    <div class='fit-collage'>
+                    <div class='fit-collage' style='border:1px solid gray;'>
                     
                     </div>
 

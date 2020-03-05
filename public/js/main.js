@@ -97,14 +97,28 @@ $('.feed').click(function(){
             items = items + 1;
             console.log(items);
             $('#itm-count').text(items + " items");
+
+            var image = $(this).find('.image-id').attr('id');
+
+            
+            console.log("wow" + image)
+            $('.fit-collage').append("<div id=modal" + image + " style='border: 1px solid gray; width: 100px; height: 100px;>wow</div>')");
+            $('#modal' + image).css("background-image", "url('images/" + image + ")");
+
         }
     
         if(items == 0){
             $('#itm-count').text('');
         }
     }
-    
-    
 });
 
+
+// $('.feed.image-id').click(function(){
+
+//     var id 
+//     console.log(this.id);
+//     console.log('you crazy mane')
+//     console.log('wow');
+// });
 

@@ -3,7 +3,7 @@
 @section('content')
 <div class='closet-nav' style='text-align:center;width:100%; height: 35px;box-shadow: 0 4px 2px -2px black;background-color:#1a1a1a; position:fixed; top: 50px;z-index:999;'>
         
-        <a href="#" style='position:fixed; left: 75px;margin-top:5px;'>Clothes</a>
+        <a href="#" style='position:fixed; left: 75px;margin-top:5px;'>Articles</a>
         
         <a href="#" style='position:fixed; right: 75px;margin-top:5px;'>Fits</a>
 </div>
@@ -24,6 +24,8 @@
         
         <div style='overflow:hidden;' > 
             <div class='feed {{$item->id}}' id="{{$item->id}}" style="text-align:center; background: url(uploads/{{$item->image}}); background-size:cover;">
+                
+                <div class='image-id' id="{{$item->image}}" style='display:none'></div>
                 
                 <div style='background-color:red; padding:40px;opacity: .6'>
                     <a data-toggle="modal" data-target="#delete">Delete</a>

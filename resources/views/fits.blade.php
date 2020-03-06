@@ -7,4 +7,21 @@
         
         <a id='fits' href="{{url('/fits')}}" style='position:fixed; right: 75px;margin-top:5px;'>Fits</a>
 </div>
+
+
+
+<div style='margin-top: 80px;'>
+        <div class='outfits row' >
+
+                @foreach($fits as $fit)
+                <div class="col-4" style='padding:10px;'>
+                        <div style="width: 100px; height: 100px;background-image:background-image:url('images/{{$fit->image}}');">
+                                
+                        </div>
+                </div>
+                @endforeach
+
+              
+        </div>
+</div>
 @endsection

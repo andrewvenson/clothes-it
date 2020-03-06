@@ -25,7 +25,7 @@
         <div style='overflow:hidden;' > 
             <div class='feed {{$item->id}}' id="{{$item->id}}" style="text-align:center; background: url(uploads/{{$item->image}}); background-size:cover;">
                 
-                <div class='image-id' id="{{$item->image}}" style='display:none'></div>
+                <a class='image-id' id="{{$item->image}}" style='display:none'></a>
                 
                 <div style='background-color:red; padding:40px;opacity: .6'>
                     <a data-toggle="modal" data-target="#delete">Delete</a>
@@ -37,11 +37,11 @@
                     <a>Add to fit</a>
                 </div>
             </div>
-            <a style='color:white;text-decoration:none;position:absolute;bottom:35px;left:5px; text-shadow: 3px 4px 8px black;'><h4>{{$item->name}}<span style="font-size: 12px;color:gold;font-weight:bold;">x2</span></h4> </a>
+            <a style='color:white;text-decoration:none;position:absolute;bottom:35px;left:5px; text-shadow: 3px 4px 8px black;'><h4>{{$item->name}}</h4> </a>
 
             <a  style='position:absolute;bottom:45px;right:5px;'><img style='width:18px; height: 18px;' src="images/unlock.png" alt=""></a>
 
-            <div class='item-bullet' id="bullet-{{$item->id}}" style="display:none;position:absolute;bottom:50%;right:45%;border:1px solid gray;background-color: lightgray; box-shadow: 3px 4px 8px #1c1b17; height: 25px; width: 25px;border-radius: 50%;"></div>
+            <div class='item-bullet' id="bullet-{{$item->id}}" style="display:none;position:absolute;bottom:50%;right:45%;border:1px solid lightgray;background-color: lightgray; box-shadow: 3px 4px 8px #1c1b17; height: 25px; width: 25px;border-radius: 50%;"></div>
 
             <a class='more more-{{$item->id}}' id="{{$item->id}}" style='float:right;'><img src="images/more.png" style='width:16px;height:16px;' alt=""></a>                
             <a class='more close-{{$item->id}}' id="{{$item->id}}" style='display:none;float:right;'><img src="images/close.png" style='width:16px;height:16px;' alt=""></a>                

@@ -21,6 +21,13 @@ Route::get('/feed', function(){
 });
 
 
-Route::get('/fits', function(){
-    return view('fits');
+
+Route::get('/fits', "OutfitController@fits")->name('fits');
+
+Route::post('/fits', "OutfitController@store");
+
+
+
+Route::get('/profile', function(){
+    return view('profile');
 });

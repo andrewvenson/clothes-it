@@ -97,17 +97,14 @@ $('.feed').click(function(){
         }else{
             $(this).css('filter', 'brightness(.8)');
             $("#bullet-" + this.id).css('background-color', '#59e028');
-            console.log('what')
-            console.log($(this).css('filter'));
-    
+
             items = items + 1;
-            console.log(items);
+
             $('#itm-count').text(items + "x");
 
             var image = $(this).find('.image-id').attr('id');
 
             
-            console.log("wow" + image)
 
             var $image_url = "uploads\/" + image;
 
@@ -115,8 +112,11 @@ $('.feed').click(function(){
             
             
             $('.fit-collage').append($x);
+            $('.fit-collage').append("<input style='display:none' name='fit-items[]' value=" + image + ">");
 
 
+
+            console.log(image);
 
             $("#bloomberg"+this.id).css("background", "url(" + $image_url + ")");
             $("#bloomberg"+this.id).css("background-size", "100% 100%");

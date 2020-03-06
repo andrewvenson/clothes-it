@@ -33,7 +33,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content" style='height:500px;position:relative'>
             <div class='modal-body' style='padding:10px !important;'>
-                <form action="">
+                <form action="/fits" method='post'>
                     @csrf
                     <input class='form-control' name='name' type="text" placeholder="Name">
                     
@@ -43,12 +43,17 @@
                     
 
                     <a style='left:0;bottom:0;position:absolute; margin:10px;' href="" data-dismiss='modal'>Close</a>
-                    <a style='right:0;bottom:0;position:absolute;margin:10px;' href="" data-dismiss='modal'>Create fit</a>
+                    <button  type='submit' style='background:none; border:none;right:0;bottom:0;position:absolute;margin:10px;color:white;font-weight:bold;'>Create fit</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
+
 
 <!-- New Item Form -->
 <div class="modal fade" id="new" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">

@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('content')
-<h1>feed bitch</h1>
+<h1>feed bitch  </h1>
 @endsection

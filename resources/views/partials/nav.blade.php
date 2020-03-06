@@ -1,9 +1,9 @@
 <div class="row" style='height:50px; background-color:#1f1f1f;position:fixed;top:0;width:100%;z-index:999;'>
     <div class='col' >
         <div style='margin-top:10px;'>
-            <a id='search-close' style='position:fixed; top:12px; left: 18px;display:none;'><img style='width:14px; height:14px;' src="images/popleft.png" alt=""></a>
+            <a id='search-close' style='position:fixed; top:12px; left: 20px;display:none;'><img style='width:14px; height:14px;' src="images/close.png" alt=""></a>
             <a id='search-btn' href="#" ><img src="images/search.png" style='width:20px; height:20px;' alt=""></a>
-            <a id='search-inp-btn' style='position:fixed; top:12px; left: 263px;display:none;'><img style='width:16px; height:16px;' src="images/search.png" alt=""></a>
+            <a id='search-inp-btn' style='position:fixed; top:12px; left: 266px;display:none;'><img style='width:16px; height:16px;' src="images/search.png" alt=""></a>
             <input id='search-inp' type="text" placeholder="Search by item, fit, color, tag... " style='background-color:black; color: white;display:none;padding-left:23px;width:275px;'>
 
         </div>
@@ -11,7 +11,7 @@
     <div class="col nav-title" style='text-align:center;'>
 
         <a href="{{url('/')}}">
-            <h4 style='margin-top:10px;font-family:futura;'>clothesit</h4>
+            <h4 style='margin-top:10px;font-family:futura;'>clothesIt</h4>
         </a>
     </div>
     <div class="col">
@@ -33,7 +33,7 @@
         <a href="#">Profile</a>
     </div>
     <div>
-        <a href="#">Logout</a>
+        <a7ly;vioy'0 href="#">Sign out</a>
     </div>
 </div>
 

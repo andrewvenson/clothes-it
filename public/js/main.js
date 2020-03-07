@@ -151,4 +151,5 @@ if ('serviceWorker' in navigator) {
 $('.register-button').click(function(){
     $('.login').css('display', 'none');
     $('.register').css('display', 'block');
-})
+});
+

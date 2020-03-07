@@ -5,13 +5,20 @@
 </head>
 
 <body>
-    @include('partials.nav')
 
-    @yield('content')
+   <div class='yay'>
+        @include('partials.nav')
 
-    @include('partials.footer')
+        @yield('content')
 
-    @include('partials.modals')
+        @include('partials.footer')
+
+        @include('partials.modals')
+   </div>
+    
+    <div class='mobile'>
+        <h1 style='color:white; display:none' >go to mobile</h1>
+    </div>
 
 </body>
 @include('partials.scripts')

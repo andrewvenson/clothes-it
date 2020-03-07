@@ -13,7 +13,7 @@
     
 </div>
 
-<div style='margin-top: 15px;'>
+<div style='margin-top: 20px;'>
     <h5 style='color:white;'>Theme</h5>
     
     <div class='row'>
@@ -29,14 +29,32 @@
         </div>
         <div class="col" style='padding:5px;'>
             <div style='width:75px; height: 75px; background-color: white;'>
+                <div style='height:25px;background-color:#A8D0DD;'>
+                </div>
+                <div style='height:25px;background-color:#A0CCDA;'>
+                </div>
+                <div style='height:25px;background-color:#92BAC7;'>
+                </div>
             </div>
         </div>
         <div class="col" style='padding:5px;'>
             <div style='width:75px; height: 75px; background-color: white;'>
+                <div style='height:25px;background-color:#114B5F;'>
+                </div>
+                <div style='height:25px;background-color:#104557;'>
+                </div>
+                <div style='height:25px;background-color:#0E3E4E;'>
+                </div>
             </div>
         </div>
         <div class="col" style='padding:5px;'>
             <div style='width:75px; height: 75px; background-color: white;'>
+                <div style='height:25px;background-color:#65CFF9;'>
+                </div>
+                <div style='height:25px;background-color:#56CBF9;'>
+                </div>
+                <div style='height:25px;background-color:#4FB9E3;'>
+                </div>
             </div>
         </div>
     </div>

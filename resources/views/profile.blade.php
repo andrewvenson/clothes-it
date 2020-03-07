@@ -13,7 +13,7 @@
 </div>
 
 
-<div class='row' style='margin-top:20px;margin-left:10px;color:white;text-align:center'>
+<div class='row' style='margin-top:30px;margin-left:10px;color:white;text-align:center'>
 
     <div class="col">
     <h5>10</h5>
@@ -32,12 +32,7 @@
     <h5>5</h5>
     <p>Private</p>
     </div>
-    
-    
 
-    
-
-    
 </div>
 
 <div style='margin-top: 20px;margin-left:10px;'>

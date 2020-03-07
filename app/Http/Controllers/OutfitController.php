@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Outfits;
+use App\outfits;
 
 class OutfitController extends Controller
 {
     public function fits(){
 
-        $fits = new Outfits();
+        $fits = new outfits();
 
        
 

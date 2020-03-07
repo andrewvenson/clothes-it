@@ -10,7 +10,7 @@
         <a href="#">$programmerprod</a>
     </div>
 
-    <a href="#"><img src="images/edit.png" style='width:25px; height:25px;' alt=""></a>
+    <a href="#">Edit Profile <span><img src="images/edit.png" style='width:20px; height:20px;' alt=""></span></a>
 
     
 </div>

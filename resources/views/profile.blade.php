@@ -13,11 +13,11 @@
 </div>
 
 
-<div class='row' style='margin-top:30px;margin-left:10px;color:white;text-align:center'>
+<div class='row' style='margin-left:10px;color:white;text-align:center'>
 
     <div class="col">
     <h5>10</h5>
-    <p>Articles</p>
+    <p style='margin-top:0px;'>Articles</p>
 
     </div>
     <div class="col">

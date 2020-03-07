@@ -1,4 +1,4 @@
-<div class='footer-nav row' style='text-align:center; position:fixed; width:100%; bottom:10px;height:50px; color:white;'>
+<div class='footer-nav row' style='text-align:center; position:fixed; width:100%; bottom:10px;height:50px; background-color: #121212; color:white;'>
     <div class="col" style='margin-top:10px;'>
         @if(Request::path() == "feed")
             <a href="{{url('/feed')}}"><img src="images/feedfl.png" style="width:20px; height:20px;"alt=""> </a>

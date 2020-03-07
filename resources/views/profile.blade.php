@@ -16,8 +16,8 @@
 <div class='row' style='margin-left:10px;color:white;text-align:center'>
 
     <div class="col">
-    <h5>10</h5>
-    <p style='margin-top:0px;'>Articles</p>
+    <h5 style='margin:0px;'>10</h5>
+    <p style='margin:0px;'>Articles</p>
 
     </div>
     <div class="col">

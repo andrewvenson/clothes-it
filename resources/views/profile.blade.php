@@ -16,7 +16,24 @@
 <div style='margin-top: 15px;'>
     <h5 style='color:white;'>Theme</h5>
     
-
+    <div class='row'>
+        <div class="col" style='padding:5px;'>
+        <div style='width:100%; height: 100%; background-color: white;'>
+            </div>
+        </div>
+        <div class="col" style='padding:5px;'>
+            <div style='width:100%; height: 100%; background-color: white;'>
+            </div>
+        </div>
+        <div class="col" style='padding:5px;'>
+            <div style='width:100%; height: 100%; background-color: white;'>
+            </div>
+        </div>
+        <div class="col" style='padding:5px;'>
+            <div style='width:100%; height: 100%; background-color: white;'>
+            </div>
+        </div>
+    </div>
     <a style='background-color: white;height: 75px; width: 75px;box-shadow: 3px 4px 8px black;margin:5px;'></a>
     <a style='background-color: white;height: 75px; width: 75px;box-shadow: 3px 4px 8px black;margin:5px;'></a>
 

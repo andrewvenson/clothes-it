@@ -7,17 +7,24 @@
     
     </div>
     <div style='margin-top: 10px;margin-left: 5px;'>
-        <a href="#">$programmerprod</a>
+        <a href="#">$programmerprod<span><img src="images/edit.png" style='width:18px; height:18px;' alt=""></span></a>
     </div>
 
-    <a href="#">Edit Profile <span><img src="images/edit.png" style='width:20px; height:20px;' alt=""></span></a>
-
-    
 </div>
 
 
-<div style='margin-bottom:20px;margin-left:10px;'>
-
+<div style='margin-top:20px;margin-left:10px;'>
+    <h5>10</h5>
+    <p>Articles</p>
+    <br>
+    <h5>3</h5>
+    <p>Fits</p>
+    <br>
+    <h5>5</h5>
+    <p>Public</p>
+    <br>
+    <h5>5</h5>
+    <p>Private</p>
 </div>
 
 <div style='margin-top: 20px;margin-left:10px;'>

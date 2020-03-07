@@ -14,7 +14,7 @@
 </div>
 
 <div style='margin-top: 20px;margin-left:10px;'>
-    <p style='color:white;'>Theme</p>
+    <p style='color:white;font-weight:bold;'>Theme</p>
     
     <div class='row'>
         <div class="col" style='padding:5px;'>

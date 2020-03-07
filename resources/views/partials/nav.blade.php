@@ -33,7 +33,7 @@
         <a href="#">Profile</a>
     </div>
     <div>
-        <a href="#">Sign out</a>
+        <a href="/login">Sign out</a>
     </div>
 </div>
 

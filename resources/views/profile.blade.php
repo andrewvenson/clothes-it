@@ -13,18 +13,31 @@
 </div>
 
 
-<div style='margin-top:20px;margin-left:10px;color:white;'>
+<div class='row' style='margin-top:20px;margin-left:10px;color:white;text-align:center'>
+
+    <div class="col">
     <h5>10</h5>
     <p>Articles</p>
 
+    </div>
+    <div class="col">
     <h5>3</h5>
     <p>Fits</p>
-
+    </div>
+    <div class="col">
     <h5>5</h5>
     <p>Public</p>
-    
+    </div>
+    <div class="col">
     <h5>5</h5>
     <p>Private</p>
+    </div>
+    
+    
+
+    
+
+    
 </div>
 
 <div style='margin-top: 20px;margin-left:10px;'>

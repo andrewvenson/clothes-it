@@ -10,10 +10,19 @@
         <a href="#">$programmerprod</a>
     </div>
 
+    <a href="#"><img src="images/edit.png" style='width:25px; height:25px;' alt=""></a>
+
     
 </div>
 
+
+<div style='margin-bottom:20px;margin-left:10px;'>
+
+</div>
+
 <div style='margin-top: 20px;margin-left:10px;'>
+
+
     <p style='color:white;font-weight:bold;'>Theme</p>
     
     <div class='row'>

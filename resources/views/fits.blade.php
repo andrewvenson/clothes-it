@@ -8,15 +8,12 @@
         <a id='fits' href="{{url('/fits')}}" style='position:fixed; right: 75px;margin-top:5px;'>Fits</a>
 </div>
 
-
-
 <div style='margin-top: 100px;'>
         <div class='outfits row'> 
                 @foreach ($fittys as $fit)
                 <div class='col-lg-4' style='padding:10px;'>
                         <div style="padding:10px;border: 1px solid #1a1a1a;border-radius: 10px;background-color:#080808;position:relative;">
                                 <div class="row" style='overflow-y: scroll; overflow-x: hidden; min-height: 250px; height: 250px; padding:0px;'>
-                                        
                                         @foreach($fit as $fo)
                                                 <div class="col-4" style='margin:0px;padding:0 !important;text-align:center;'>
                                                         <img src="uploads/{{$fo}}" style="margin:5px; width: 90px; height: 90px;border-radius: 3px;">

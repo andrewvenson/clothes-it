@@ -54,6 +54,9 @@
     
 </div>
 
+@include('partials.slideout')
+
+
 
 
 @endsection

@@ -93,7 +93,7 @@
     }
 
     body{
-        background-color:#000000;
+        background-color:#121212;
         font-family: 'Noto Serif', !important ;
         padding-bottom:100px;
         

@@ -38,9 +38,9 @@
 <div style='margin-top: 20px;margin-left:10px;'>
 
 
-    <p style='color:white;font-weight:bold;'>Theme</p>
+    <p style='color:white;font-weight:bold;margin:0px;'>Theme</p>
     
-    <div class='row'>
+    <div class='row' style='margin:0px;'>
         <div class="col" style='padding:5px;'>
         <div style='width:75px; height: 75px;'>
             <div style='height:25px;background-color:#F6FFFB;'>

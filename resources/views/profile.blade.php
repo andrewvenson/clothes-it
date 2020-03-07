@@ -13,7 +13,7 @@
     
 </div>
 
-<div style='margin-top: 20px;'>
+<div style='margin-top: 20px;margin-left:10px;'>
     <h5 style='color:white;'>Theme</h5>
     
     <div class='row'>

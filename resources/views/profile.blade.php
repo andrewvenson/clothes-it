@@ -21,16 +21,16 @@
 
     </div>
     <div class="col">
-    <h5>3</h5>
-    <p>Fits</p>
+    <h5 style='margin:0px;'>3</h5>
+    <p style='margin:0px;'>Fits</p>
     </div>
     <div class="col">
-    <h5>5</h5>
-    <p>Public</p>
+    <h5 style='margin:0px;'>5</h5>
+    <p style='margin:0px;'>Public</p>
     </div>
     <div class="col">
-    <h5>5</h5>
-    <p>Private</p>
+    <h5 style='margin:0px;'>5</h5>
+    <p style='margin:0px;'>Private</p>
     </div>
 
 </div>

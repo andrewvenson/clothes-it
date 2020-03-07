@@ -13,7 +13,6 @@
 
     @include('partials.modals')
 
-    @include('partials.slideout')
 </body>
 @include('partials.scripts')
 </html>

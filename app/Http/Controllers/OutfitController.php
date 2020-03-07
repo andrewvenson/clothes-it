@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\outfits;
+use App\Outfits;
 
 class OutfitController extends Controller
 {
@@ -11,13 +11,25 @@ class OutfitController extends Controller
 
         $fits = new Outfits();
 
-        $images = $fits->pluck('image');
+       
 
-        dd($images);
-
+        
         $all_itms = $fits::orderBy('created_at', 'desc')->get();
 
-        return view('fits', ['fits' => $all_itms]);
+        $fittys = [];
+
+        foreach ($all_itms as $itm){
+            $outfit = explode(" ", $itm->image);
+
+            $wow = array_diff($outfit, array(""));
+            
+            array_push($fittys, $wow);
+        }
+
+        // dd($fittys);
+
+
+        return view('fits', ['fits' => $all_itms, 'fittys' => $fittys]);
     }
 
     public function store(){
@@ -26,13 +38,17 @@ class OutfitController extends Controller
 
         $item->name = request('name');
 
-        $image_val = "";
+        $image_val = " ";
 
         $image_str = request('fit-items');
+
+        // dd($image_str);
         
         foreach($image_str as $image){
-            $image_val .= strval($image_val) . strval($image) . " ";
+            $image_val .= strval($image) . " ";
         }
+
+        // dd($image_val);
 
 
         $item->private = 1;

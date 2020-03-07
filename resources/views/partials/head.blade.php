@@ -39,7 +39,7 @@
 
 <style>
     .feed{
-        width: 100%; 
+        width: 100%;
         height: 300px;  
         background-color:lightgray;
         margin: 10px auto;
@@ -73,6 +73,10 @@
     }
 
     .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .row::-webkit-scrollbar {
         display: none;
     }
 

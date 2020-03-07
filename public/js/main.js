@@ -82,6 +82,7 @@ $('.cancel-picker').click(function(){
     $('.closet-nav').css('display', 'block');
     $('#img-picker-nav').css('display', 'none');
     $('.modal-image').remove();
+    $('.inputimages').remove();
 })
 
 
@@ -93,7 +94,8 @@ $('.feed').click(function(){
             $("#bullet-" + this.id).css('background-color', 'lightgray');
             items = items - 1;
             $('#itm-count').text(items + "x");
-            $('#bloomberg' + this.id    ).remove();
+            $('#bloomberg' + this.id).remove();
+            $('#input' + this.id).remove();
         }else{
             $(this).css('filter', 'brightness(.8)');
             $("#bullet-" + this.id).css('background-color', '#59e028');
@@ -112,7 +114,7 @@ $('.feed').click(function(){
             
             
             $('.fit-collage').append($x);
-            $('.fit-collage').append("<input style='display:none' name='fit-items[]' value=" + image + ">");
+            $('.fit-collage').append("<input class='inputimages' id=\"input" + this.id + "\" style='display:none' name='fit-items[]' value=" + image + ">");
 
 
 
@@ -130,6 +132,10 @@ $('.feed').click(function(){
     }
 });
 
+
+
+
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/serviceworker.js', {
         scope: '.' 
@@ -142,8 +148,3 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-
-$("a").click(function (event) {
-    event.preventDefault();
-    window.location = $(this).attr("href");
-});

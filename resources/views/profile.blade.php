@@ -19,10 +19,12 @@
     <div class='row'>
         <div class="col" style='padding:5px;'>
         <div style='width:100%; height: 100%; background-color: white;'>
-            </div>
+            whoa
+        </div>
         </div>
         <div class="col" style='padding:5px;'>
             <div style='width:100%; height: 100%; background-color: white;'>
+                whoa
             </div>
         </div>
         <div class="col" style='padding:5px;'>

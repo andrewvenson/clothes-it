@@ -76,7 +76,7 @@
                     
                     </div>
                 </div>
-                <p  style='position:absolute; bottom:35px;left:5px; opacity:.5;color:white;box-shadow: 3px 3px 7px black'>Select color</p>
+                <p  style='position:absolute; bottom:35px;left:5px;color:white;text-shadow: 2px 4px 8px #000;'>Select color</p>
             </div>
             
 

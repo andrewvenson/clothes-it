@@ -29,6 +29,7 @@ $('.more').click(function(){
 
     
     if($(photo).css('display') == 'none'){
+        $('.' + this.id).css('filter', 'brightness(1)');
         $(more).css("display", "none");
         $(closemore).css("display", "block");
         $(photo).css('display', 'block');
@@ -141,19 +142,13 @@ $('.feed').click(function(){
         if(items == 0){
             $('#itm-count').text('');
         }
-    }
-});
-
-$('.feed').dblclick(function(){
-    if($(this).css('filter') == 'brightness(0.2)'){
-        $(this).css('filter', 'brightness(1)');
-    }else{
+    }else if ($('.cock').css('display') !== 'block' && $(this).css('filter') != 'brightness(0.2)'){
         $(this).css('filter', 'brightness(0.2)');
-        console.log($(this).css('filter'));       
+        console.log('wow');
+    }else if($(this).css('filter') == 'brightness(0.2)'){
+        $(this).css('filter', 'brightness(1)');
     }
 });
-
-
 
 
 if ('serviceWorker' in navigator) {

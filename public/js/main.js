@@ -37,6 +37,9 @@ $('.more').click(function(){
 $('#search-btn').click(function(){
     $(this).css('display', 'none');
     $('#search-inp').css('display', 'block');
+    $('#search-inp').animate({
+        width: '275px',
+    }, 500);
     $('#search-inp-btn').css('display', 'block');
     $('.nav-title').css('display', 'none');
     $('#search-close').css('display', 'block');
@@ -44,6 +47,9 @@ $('#search-btn').click(function(){
 
 $('#search-close').click(function(){
     $(this).css('display', 'none');
+    $('#search-inp').animate({
+        width: '0px',
+    }, 500);
     $('#search-inp').css('display', 'none');
     $('#search-inp-btn').css('display', 'none');
     $('.nav-title').css('display', 'block');

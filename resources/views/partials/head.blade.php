@@ -46,6 +46,17 @@
         box-shadow: 3px 4px 8px black;
     }
 
+    input{
+        border: 1px solid #171717;
+        padding: 3px; 
+        border-radius: 5px;
+    }
+
+    textarea{
+        border: 1px solid #171717;
+        border-radius: 5px;
+    }
+
     .feed div{
         display:none;
         height: 100px;

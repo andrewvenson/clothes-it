@@ -16,7 +16,7 @@
         <div style='position:fixed; top:80px;width: 100%;padding: 20px;overflow-y: scroll;height: 625px;'>
             <input id='name' placeholder="Name" type="text" style='background-color: black;width: 100%;color:white'>
 
-            <div id='img-preview' style='position:relative; display:none; width: 100%; height: 250px; box-shadow: 3px 4px 8px black; border-radius: 5px;brightness:0.5;'>
+            <div id='img-preview' style='position:relative; display:none; width: 100%; height: 250px; box-shadow: 3px 4px 8px black; border-radius: 5px;filter:brightness(.5);'>
                 <p id='itm-name' style='position:absolute; top: 5px; left: 5px; color: white; font-weight:bold; text-shadow: 3px 4px 8px #000; '>Name</p>
                 <a id='cancel-item-inp' style='position:absolute; top: 5px; right: 5px;'><img src="images/close.png" style='width: 15px; height: 15px;' alt=""></a>
                 

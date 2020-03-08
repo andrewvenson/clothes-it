@@ -92,7 +92,7 @@
             </div>
 
             <div style='position:relative; margin-top:20px;'>
-                <button type='submit' style='position:absolute;right:0;bottom:10;background:none; border:none; font-weight:bold;color:white;'>Add to Closet</button>
+                <button type='submit' style='position:absolute;right:0;bottom:10px;background:none; border:none; font-weight:bold;color:white;'>Add to Closet</button>
             </div>
 
         </div>

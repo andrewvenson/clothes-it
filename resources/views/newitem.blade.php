@@ -76,7 +76,7 @@
                     
                     </div>
                 </div>
-                <input type="text" style='background-color:black;position:absolute; bottom:35px;left:2px; opacity:.4;color:white;' placeholder='Type color'>
+                <input type="text" style='background-color:black;position:absolute; bottom:35px;left:5px; opacity:.4;color:white;' placeholder='Enter or select color'>
             </div>
             
 

@@ -20,7 +20,7 @@
                 <p id='itm-name' style='position:absolute; top: 5px; left: 5px; color: white; font-weight:bold; text-shadow: 3px 4px 8px #000; '>Name</p>
                 <a id='cancel-item-inp' style='position:absolute; top: 5px; right: 5px;'><img src="images/close.png" style='width: 15px; height: 15px;' alt=""></a>
                 
-                <img src="#"  id='preview' style='width: 100%; height: 100%;border-radius: 5px;' alt="">
+                <img src="#"  id='preview' style='width: 100%; height: 100%;border-radius: 5px;brightness: .5;' alt="">
             </div>
 
             

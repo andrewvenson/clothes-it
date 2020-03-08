@@ -7,7 +7,7 @@
         @endif
     </div>
     <div class="col" style='margin-top:10px;'>
-        @if(Request::path() == "/" || Request::path() == "fits" )
+        @if(Request::path() == "/" || Request::path() == "fits" || Request::path() == "/newitem")
             <a href="{{url('/')}}"><img src="images/shirtfl.png" style='width:24px; height:24px' alt=""></a>
         @else
             <a href="{{url('/')}}"><img src="images/shirtol.png" style='width:24px; height:24px' alt=""></a>

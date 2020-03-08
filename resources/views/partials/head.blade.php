@@ -85,6 +85,10 @@
         }
     }
 
+    .image-upload>input {
+        display: none !important;
+    }   
+
     .row::-webkit-scrollbar {
         display: none;
     }

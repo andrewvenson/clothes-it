@@ -36,3 +36,7 @@ Route::get('/profile', function(){
 Route::get('/login', function(){
     return view('login');
 });
+
+Route::get('/newitem', function(){
+    return view('newitem');
+});

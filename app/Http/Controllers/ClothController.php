@@ -21,11 +21,10 @@ class ClothController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:500000'
 
         ]);
+
         $image = $request->file('image');
 
         $new_name = time().'.'.$image->getClientOriginalExtension();
-
-        echo "this is image name:".$new_name; 
 
         $image->move(public_path("uploads"), $new_name);
 

@@ -6,7 +6,7 @@ $("#nav-dropitm").click(function(){
     $("#close-dropitm").css('display', 'block');
     $('#dropdown').animate({
         height: '160px'
-    }, 500);
+    }, 200);
     $("#dropdown").css('display', 'block');
 
 });
@@ -16,7 +16,7 @@ $("#close-dropitm").click(function(){
     $("#nav-dropitm").css('display', 'block');
     $('#dropdown').animate({
         height: '0px'
-    }, 500);
+    }, 200);
     $("#dropdown").css('display', 'none');
 
 });
@@ -168,3 +168,76 @@ $('.register-button').click(function(){
     $('.register').css('display', 'block');
 });
 
+
+$('.img-description').click(function(){
+    $(this).animate({
+        height: "150px"
+    }, 250)
+});
+
+
+$('.emptystr').click(function(){
+    if($(this).css('display') === 'block'){
+        $(this).css('display', 'none');
+        $('.goldstr').css('display', 'block');
+    }
+});
+
+$('.goldstr').click(function(){
+    if($(this).css('display') === 'block'){
+        $(this).css('display', 'none');
+        $('.emptystr').css('display', 'block');
+    }
+});
+
+$('.priv-pub-inp').click(function(){
+    if($(this).val() == 'public'){
+        $(this).val("private");
+        $('.priv-pub-lbl').text("Private");
+    }else{
+        $(this).val("public");
+        $('.priv-pub-lbl').text("Public");
+    }
+});
+
+$('.trade-sell-inp').click(function(){
+    if($(this).val() == 'sell'){
+        $(this).val("trade");
+        $('.trade-sell-lbl').text("Trade");
+        $('#item-price').css('display', 'none');
+    }else{
+        $(this).val("sell");
+        $('.trade-sell-lbl').text("Sell");
+        $('#item-price').css('display', 'block');
+    }
+});
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function (e) {
+            $('#name').css('display', 'none');
+            $('#itm-name').text($('#name').val());
+            $('#img-preview').css('display', 'block');
+            $('#preview').attr('src', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#file-input").change(function(){
+    readURL(this);
+});
+
+$('#cancel-item-inp').click(function(){
+    $('#img-preview').css('display', 'none');
+    $('#name').css('display', 'block');
+    $('#name').val(''); 
+});
+
+$('.color-picker .col').click(function(){
+    $('.col').css('border', 'none');
+    $(this).css('border', '2px solid darkgray');
+    console.log('whoa u crazy');
+})

@@ -10,10 +10,7 @@ class OutfitController extends Controller
     public function fits(){
 
         $fits = new outfits();
-
-       
-
-        
+     
         $all_itms = $fits::orderBy('created_at', 'desc')->get();
 
         $fittys = [];
@@ -25,9 +22,6 @@ class OutfitController extends Controller
             
             array_push($fittys, $wow);
         }
-
-        // dd($fittys);
-
 
         return view('fits', ['fits' => $all_itms, 'fittys' => $fittys]);
     }

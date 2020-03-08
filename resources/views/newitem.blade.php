@@ -37,7 +37,7 @@
             <div class='color-picker' style='margin-top:25px;'>
                 <p style='color:lightgray;'>Select color</p>
                 <div class='row' style='margin:0px;padding:0px;'>
-                    <div class="col" style='background-color: white;height: 50px;'>
+                    <div class="col" style='background-color: white;height: 50px;border-top-left-radius: 5px; '>
                         
                     </div>
                     <div class="col" style='background-color: blue'>
@@ -52,12 +52,12 @@
                     <div class="col" style='background-color: pink'>
                     
                     </div>
-                    <div class="col" style='background-color: black'>
+                    <div class="col" style='background-color: black; border-top-right: radius: 5px;'>
                     
                     </div>
                 </div>
                 <div class='row'>
-                    <div class="col" style='background-color: brown; height: 50px;'>
+                    <div class="col" style='background-color: brown; height: 50px;border-bottom-left-radius: 5px;'>
                     
                     </div>
                     <div class="col" style='background-color: red'>
@@ -72,7 +72,7 @@
                     <div class="col" style='background-color: lightgray'>
                     
                     </div>
-                    <div class="col" style='background-color: gray'>
+                    <div class="col" style='background-color: gray; border-bottom-right-radius: 5px;'>
                     
                     </div>
                 </div>

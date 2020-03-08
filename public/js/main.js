@@ -240,4 +240,8 @@ $('.color-picker .col').click(function(){
     $('.col').css('border', 'none');
     $(this).css('border', '2px solid darkgray');
     console.log('whoa u crazy');
+
+    $('#color-select').text('Selected color: ' + $(this).css('background-color'));
+    $('#color-select').css('color', $(this).css('background-color'));
+    $('#color-select').css('font-weight', 'bold');
 })

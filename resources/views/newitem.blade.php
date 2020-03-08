@@ -34,9 +34,9 @@
 
             <textarea class='img-description' style='background-color: black; margin-top: 5px;width: 100% !important;color: white;height: 35px;' placeholder='Description' name="" id="" cols="30" rows="10"></textarea>
             
-            <div class='color-picker' style='margin-top:25px;'>
-                <p style='color:lightgray;'>Select color</p>
+            <div class='color-picker' style='margin-top:25px;position:relative;'>
                 <div class='row' style='margin:0px;padding:0px;'>
+
                     <div class="col" style='background-color: white;height: 50px;border-top-left-radius: 5px; '>
                         
                     </div>
@@ -52,7 +52,7 @@
                     <div class="col" style='background-color: pink'>
                     
                     </div>
-                    <div class="col" style='background-color: black; border-top-right: radius: 5px;'>
+                    <div class="col" style='background-color: black; border-top-right-radius: 5px;'>
                     
                     </div>
                 </div>
@@ -76,6 +76,7 @@
                     
                     </div>
                 </div>
+                <input type="text" style='background-color:black;position:absolute; bottom:35px;left:2px; opacity:.4;color:white;' placeholder='Type color'>
             </div>
             
 

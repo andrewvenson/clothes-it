@@ -4,6 +4,9 @@ $("#nav-dropitm").click(function(){
 
     $(this).css('display', 'none');
     $("#close-dropitm").css('display', 'block');
+    $('#dropdown').animate({
+        height: '175px'
+    }, 500);
     $("#dropdown").css('display', 'block');
 
 });
@@ -11,6 +14,9 @@ $("#nav-dropitm").click(function(){
 $("#close-dropitm").click(function(){
     $(this).css('display', 'none');
     $("#nav-dropitm").css('display', 'block');
+    $('#dropdown').animate({
+        height: '0px'
+    }, 500);
     $("#dropdown").css('display', 'none');
 
 });

@@ -1,7 +1,7 @@
 <div class="row" style='height:50px; background-color:#1f1f1f;position:fixed;top:0;width:100%;z-index:999;'>
     <div class='col' >
         <div style='margin-top:10px;'>
-            <a id='search-close' style='position:fixed; top:12px; left: 20px;display:none;'><img style='width:14px; height:14px;' src="images/close.png" alt=""></a>
+            <a id='search-close' style='position:fixed; top:12px; left: 20px;display:none;'><img style='width:14px; height:14px;' src="images/popleft.png" alt=""></a>
             <a id='search-btn' href="#" ><img src="images/search.png" style='width:20px; height:20px;' alt=""></a>
             <a id='search-inp-btn' style='position:fixed; top:12px; left: 266px;display:none;'><img style='width:16px; height:16px;' src="images/search.png" alt=""></a>
             <input id='search-inp' type="text" placeholder="Search by item, fit, color, tag... " style='background-color:black; color: white;display:none;padding-left:23px;width:0px;'>

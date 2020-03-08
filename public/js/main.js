@@ -5,7 +5,7 @@ $("#nav-dropitm").click(function(){
     $(this).css('display', 'none');
     $("#close-dropitm").css('display', 'block');
     $('#dropdown').animate({
-        height: '175px'
+        height: '160px'
     }, 500);
     $("#dropdown").css('display', 'block');
 
@@ -144,6 +144,14 @@ $('.feed').click(function(){
     }
 });
 
+$('.feed').dblclick(function(){
+    if($(this).css('filter') == 'brightness(0.2)'){
+        $(this).css('filter', 'brightness(1)');
+    }else{
+        $(this).css('filter', 'brightness(0.2)');
+        console.log($(this).css('filter'));       
+    }
+});
 
 
 

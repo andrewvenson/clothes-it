@@ -20,7 +20,9 @@
     <div style='position:relative;'>
         <div style="background-image: url('images/black-batman.jpg'); background-size: cover; box-shadow: 3px 4px 8px black; position:absolute; top:0; left:-5px; !important;background-color: white; width: 50px; height: 50px; border-radius: 100%;z-index:666;"></div>
         <div style="background-color:orange; box-shadow: 3px 4px 8px black; width: 20px; height: 20px;border-radius: 50%;position:absolute; top:5; left:30px;z-index:777;"></div>
-        <p style="text-shadow: 3px 4px 8px black; width: 20px; height: 20px;border-radius: 50%;position:absolute; top:20px; left:50px;color:white;font-weight:bold;">$programmerprod</p>
+        <p style="text-shadow: 3px 4px 8px black; width: 20px; height: 20px;border-radius: 50%;position:absolute; top:10px; left:50px;color:white;font-weight:bold;z-index:777">$programmerprod</p>
+        <a  style='position:absolute;top:10px;right:5px;'><img style='width:18px; height: 18px;' src="images/star.png" alt=""></a>
+
         
         <div style='overflow:hidden;' > 
             <div class='feed {{$item->id}}' id="{{$item->id}}" style="text-align:center; background: url(uploads/{{$item->image}}); background-size:cover;border-radius:10px;">

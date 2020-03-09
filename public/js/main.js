@@ -47,7 +47,7 @@ $('#search-btn').click(function(){
     $('#search-inp').animate({
         width: '275px',
     }, 500);
-    $('#search-inp-btn').css('display', 'block');
+    $('#search-inp-btn').fadeIn(400);
     $('.nav-title').css('display', 'none');
     $('#search-close').css('display', 'block');
 });
@@ -58,7 +58,7 @@ $('#search-close').click(function(){
         width: '0px',
     }, 500);
     $('#search-inp').css('display', 'none');
-    $('#search-inp-btn').css('display', 'none');
+    $('#search-inp-btn').fadeOut(100);
     $('.nav-title').css('display', 'block');
     $('#search-btn').css('display', 'block');
 });

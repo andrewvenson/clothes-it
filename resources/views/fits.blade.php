@@ -11,7 +11,7 @@
 <div style='margin-top: 100px;'>
         <div class='outfits row'> 
                 @foreach ($fittys as $fit)
-                <div class='col-lg-4' style='padding:10px;'>
+                <div class='col-lg-4' style='padding:5px;'>
                 <a  style='position:absolute;top:12px;right:16px;z-index:777;'><img style='width:18px; height: 18px;' src="images/star.png" alt=""></a>
 
                         <div style="padding:10px;border: 1px solid #1a1a1a;border-radius: 10px;background-color:#080808;position:relative;">

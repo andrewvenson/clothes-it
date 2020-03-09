@@ -81,7 +81,7 @@
             
 
             
-            <div class="custom-control custom-switch" style='margin-top: 15px;'>
+            <div class="custom-control custom-switch" style='margin-top: 25px;'>
                 <input type="checkbox" class="trade-sell-inp custom-control-input" value='sell' id="tradesell" checked>
                 <label class="trade-sell-lbl custom-control-label" style='color: white;font-weight:bold;' for="tradesell"><span>Sell</span></label><br>
                 <input id='item-price' type="number" style='margin-left: 5px;background-color: black; width: 100px;color:white;' placeholder='$0.00'>

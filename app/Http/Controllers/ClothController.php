@@ -62,7 +62,7 @@ class ClothController extends Controller
         $item->color = request('color');
         $item->tag = request('tag');
         $item->image = $new_name;
-
+        $item->type = request('type');
         $item->save();
 
         return redirect()->route('home');

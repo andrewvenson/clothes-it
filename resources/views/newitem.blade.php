@@ -100,7 +100,7 @@
             </div>
 
             <div style='margin-top:25px;'>
-                <input type="text" style='background-color:black' placeholder='Tag'>
+                <input type="text" style='background-color:black; color:white;' placeholder='Tag'>
             </div>
 
             

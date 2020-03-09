@@ -266,4 +266,19 @@ $('.color-picker .col').click(function(){
     $('#color-select').text('Selected color: ' + $(this).css('background-color'));
     $('#color-select').css('color', $(this).css('background-color'));
     $('#color-select').css('font-weight', 'bold');
-})
+});
+
+
+var timeoutId = 0;
+
+$('.footer-nav .col a').on('mousedown', function() {
+    console.log('aaaaaa')
+    $(this).css('background-color', 'rgb(213, 242, 237, 0.5)');
+    $(this).css('padding', '20px');
+    $(this).css('border-radius', '50%');
+    $(this).css('filter', 'blur(1px)');
+});
+
+
+
+style='background-color:#d0f5f3;padding:20px;border-radius:50%;opacity:.3;'

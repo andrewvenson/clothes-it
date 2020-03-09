@@ -3,7 +3,7 @@
 @section('content')
 
 
-<a href="/login" style='color: darkred;right: 10px;font-size: 14px;text-shadow: 1px 1px black;position:fixed; top:55px;float;right; font-weight:bold;'>Sign out</a>
+<a style='right: 10px;position:fixed; top:55px;float;right;'><img src="images/settings.png" style='width:25px; height: 25px;' alt=""></a>
 
 <div style='margin-top:80px;text-align:center;margin-bottom:30px;'>
 

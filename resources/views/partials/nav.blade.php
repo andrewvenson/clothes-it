@@ -24,13 +24,13 @@
 
 <div id='dropdown' style='display:none;height:0px;position:fixed;text-align:center; background-color:#1f1f1f;border: 1px solid #1f1f1f;width: 100%;padding:10px;z-index: 1000; top:50px;'>
     <div>
-        <a href="#">Closet</a><br>
+        <a href="/">Closet</a><br>
     </div>
     <div>
         <a href="#">Cart</a><br>
     </div>
     <div>
-        <a href="#">Profile</a>
+        <a href="/profile">Profile</a>
     </div>
     <div>
         <a href="/login">Sign out</a>

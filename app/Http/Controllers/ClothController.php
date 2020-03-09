@@ -9,11 +9,36 @@ class ClothController extends Controller
 {
     public function items(){
 
-        $items = new Items();
+        $items = new items();
 
         $all_itms = $items::orderBy('created_at', 'desc')->get();
 
         return view('home', ['items' => $all_itms]);
+    }
+
+    public function itemForm(){
+        $types = new items();
+        
+        $all_types = [
+            "Hoodies",
+            "Sweater",
+            "Long Sleeve",
+            "Short Sleeve",
+            "Polo",
+            "Jeans",
+            "Pants",
+            "Sweats",
+            "Shoes",
+            "Dress",
+            "Suits",
+            "Socks",
+            "Hats",
+            "Belts",
+
+        ];
+        // $all_types = $types::all();
+
+        return view('newitem',  ['all_types' => $all_types]);
     }
 
     public function store(Request $request){
@@ -33,7 +58,7 @@ class ClothController extends Controller
         $item->name = request('name');
         $item->private = 1;
         $item->public = 0;
-        $item->qty = request('qty');
+        $item->price = request('price');
         $item->color = request('color');
         $item->tag = request('tag');
         $item->image = $new_name;

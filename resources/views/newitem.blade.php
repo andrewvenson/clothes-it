@@ -76,10 +76,17 @@
                     
                     </div>
                 </div>
-                <p  style='position:absolute; bottom:35px;left:5px;color:white;text-shadow: 2px 4px 8px #000;'>Select color</p>
+                <p  style='position:absolute; bottom:35px;left:5px;color:black;font-weight:bold;text-shadow: 2px 4px 8px #000;'>Select color</p>
             </div>
             
-
+            <div style='margin-top:25px;'>
+                <select name="type" id="type" style='color:lightgray;border-radius: 5px; border-color: 1px solid #171717 !important;background-color: black;width: 150px;'>
+                    <option>Type</option>
+                    @foreach($all_types as $type)
+                        <option value="{{$type}}">{{$type}}</option>
+                    @endforeach
+                </select>
+            </div>
             
             <div class="custom-control custom-switch" style='margin-top: 25px;'>
                 <input type="checkbox" class="trade-sell-inp custom-control-input" value='sell' id="tradesell" checked>
@@ -92,50 +99,15 @@
                 <label class="priv-pub-lbl custom-control-label" style='color: white;font-weight:bold;' for="publicprivate">Public</label>
             </div>
 
+            <div style='margin-top:25px;'>
+                <input type="text" style='background-color:black' placeholder='Tag'>
+            </div>
+
             
         </div>
-        <button type='submit' style='position:fixed;right:5px;bottom:55px;background:none; border:none;color:white;font-weight:600;font-size: 14px;'>Add to Closet</button>
+        <button type='submit' style='position:fixed;right:5px;bottom:55px;background:none; border:none;color:white;font-weight:400;font-size: 16px;'>Add to closet</button>
 
     </form>
     
 @endsection
 
-
-<!-- New Item Form -->
-<div class="modal fade" id="new" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <form action="/" method='post' enctype="multipart/form-data" >
-            @csrf
-                <div class="modal-body">
-                    <input class='form-control' name='name' type="text" placeholder="Name">
-                    <input class='form-control' name='qty' placeholder="Qty" type="text">
-                    <input class='form-control' name='color' placeholder="Color" type="text">
-                    <input class='form-control' name='tag' placeholder="Tag" type="text">
-                    <input class="form-check-input" type="radio" name="private" id="exampleRadios1" value="private" checked>
-                    <label class="form-check-label" for="exampleRadios1" style='margin: 5px 0px 0px 20px;'>
-                        Private
-                    </label>
-                    <br>
-                    <input class="form-check-input" type="radio" name="public" id="exampleRadios2" value="">
-                    <label class="form-check-label" for="exampleRadios2" style='margin: 5px 0px 0px 20px;'>
-                        Public
-                    </label>
-
-                    <div>
-                        <input type="file" name="image"  accept="image/*" aria-describedby="fileHelp" style='box-shadow: none !important;background-color: #1f1f1f !important;'>
-                    </div>
-                        
-                    <div style='height:250px; width: 100%;border-radius: 5px;margin-top:15px;background-color: darkgray;'>
-                    
-                    </div>
-
-                    <div style='position:absolute; bottom:0; margin:10px;right:0'>
-                        <button type="button" class="btn btn-dark" style='background-color:black; border-color:black;' data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-dark">Add to closet</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>

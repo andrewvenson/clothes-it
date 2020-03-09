@@ -16,8 +16,8 @@ class CreateItemsTable extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->integer('price')->nullable();
-            $table->string('tag');
+            $table->float('price', 8, 2)->nullable();
+            $table->string('tag')->nullable();
             $table->string('color')->default('none'); 
             $table->string('type');
             $table->integer('private')->default('1');

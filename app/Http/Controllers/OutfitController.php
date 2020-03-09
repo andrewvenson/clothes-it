@@ -28,7 +28,7 @@ class OutfitController extends Controller
 
     public function store(){
  
-        $item = new Outfits();
+        $item = new outfits();
 
         $item->name = request('name');
 

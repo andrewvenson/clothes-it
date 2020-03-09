@@ -35,6 +35,7 @@
             <textarea class='img-description' style='background-color: black; margin-top: 5px;width: 100% !important;color: white;height: 35px;' placeholder='Description' name="description" id="" cols="30" rows="10"></textarea>
             <input type="text" name='color' style='display:none;'>
             <div class='color-picker' style='margin-top:25px;position:relative;'>
+                <p style='color:white;'>Color</p>
                 <div class='row' style='margin:0px;padding:0px;'>
 
                     <div class="col" style='background-color: white;height: 50px;border-top-left-radius: 5px; '>
@@ -76,7 +77,6 @@
                     
                     </div>
                 </div>
-                <p  style='position:absolute; bottom:35px;left:5px;color:black;font-weight:bold;text-shadow: 2px 4px 8px #000;'>Select color</p>
             </div>
             
             <div style='margin-top:25px;'>

@@ -105,7 +105,7 @@
 
             
         </div>
-        <button type='submit' style='position:fixed;right:5px;bottom:55px;background:none; border:none;color:white;font-weight:400;font-size: 16px;'>Add to closet</button>
+        <button type='submit' class='btn btn-dark' style='position:fixed;right:5px;bottom:55px;font-weight:400;font-size: 16px;'>Add to closet</button>
 
     </form>
     

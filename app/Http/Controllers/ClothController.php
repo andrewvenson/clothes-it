@@ -43,7 +43,8 @@ class ClothController extends Controller
 
     public function store(Request $request){
         $this->validate($request, [
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:500000'
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:500000',
+            'name' => 'required',
 
         ]);
 

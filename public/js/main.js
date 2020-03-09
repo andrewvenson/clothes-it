@@ -273,7 +273,7 @@ var timeoutId = 0;
 
 $('.footer-nav .col a').on('mousedown', function() {
     console.log('aaaaaa')
-    $(this).css('background-color', 'rgb(213, 242, 237, 0.5)');
+    $(this).css('background-color', 'rgb(121, 230, 232, 0.5)');
     $(this).css('padding', '20px');
     $(this).css('border-radius', '50%');
     $(this).css('filter', 'blur(1px)');

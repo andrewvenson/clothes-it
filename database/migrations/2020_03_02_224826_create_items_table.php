@@ -23,6 +23,7 @@ class CreateItemsTable extends Migration
             $table->integer('private')->default('1');
             $table->integer('public')->default('0');
             $table->string('image')->nullable();
+            $table->longText('description')->nullable();
 
             $table->timestamps();
         });

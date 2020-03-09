@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div class='closet-nav' style='text-align:center;width:100%; height: 35px;box-shadow: 0 4px 2px -2px black;background-color:#1a1a1a; position:fixed; top: 50px;z-index:999;'>
+<div class='closet-nav' style='text-align:center;width:100%; height: 35px;box-shadow: 0 4px 2px -2px black;background-color:#1a1a1a; position:fixed; top: 48px;z-index:999;'>
         
         <a id='articles' href="{{url('/')}}" style='position:fixed; left: 75px;margin-top:5px;'>Articles</a>
         
@@ -23,21 +23,30 @@
         <a style="text-shadow: 3px 4px 8px black; width: 20px; height: 20px;border-radius: 50%;position:absolute; top:10px; left:50px;color:white;font-weight:bold;z-index:777">$programmerprod</a>
         <a  style='position:absolute;top:10px;right:5px;z-index:777;'><img style='width:18px; height: 18px;' src="images/star.png" alt=""></a>
 
-        
+        <div id='info{{$item->id}}' style='position:absolute; top:100px;display:none;z-index: 666;'>
+            <p style='font-weight: bold;color:white;'>{{$item->description}}</p>
+            <p style='color:white'>wow</p>
+        </div>
+
         <div style='overflow:hidden;' > 
-            <div class='feed {{$item->id}}' id="{{$item->id}}" style="text-align:center; background: url(uploads/{{$item->image}}); background-size:cover;border-radius:10px;">
+            <div class='feed {{$item->id}}' id="{{$item->id}}" style="background: url(uploads/{{$item->image}}); background-size:cover;border-radius:10px;">
+                
+                
                 
                 <a class='image-id' id="{{$item->image}}" style='display:none'></a>
+
+                <div style='text-align:center;'>   
+                    <div class='cock' style='background-color:red; padding:40px;opacity: .6'>
+                        <a data-toggle="modal" data-target="#delete">Delete</a>
+                    </div>
+                    <div class='cock' style='background-color:black; opacity: .6; padding:40px'>
+                        <a>Edit</a>
+                    </div>
+                    <div class='cock' style='background-color:#1f1f1f; opacity: .6;padding:40px'>
+                        <a>Add to fit</a>
+                    </div>
+                </div>
                 
-                <div class='cock' style='background-color:red; padding:40px;opacity: .6'>
-                    <a data-toggle="modal" data-target="#delete">Delete</a>
-                </div>
-                <div class='cock' style='background-color:black; opacity: .6; padding:40px'>
-                    <a>Edit</a>
-                </div>
-                <div class='cock' style='background-color:#1f1f1f; opacity: .6;padding:40px'>
-                    <a>Add to fit</a>
-                </div>
             </div>
             <a style='color:white;text-decoration:none;position:absolute;bottom:35px;left:5px; text-shadow: 3px 4px 8px black;'><h4>{{$item->name}}</h4> </a>
 

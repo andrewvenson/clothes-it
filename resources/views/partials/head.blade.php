@@ -57,7 +57,7 @@
         border-radius: 5px;
     }
 
-    .feed div{
+    .feed .cock{
         display:none;
         height: 100px;
     }

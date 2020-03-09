@@ -25,7 +25,7 @@ $('.more').click(function(){
 
     var closemore = ".close-" + this.id;
     var more = ".more-" + this.id;
-    var photo = "." + this.id + " div";
+    var photo = "." + this.id + " .cock";
 
     
     if($(photo).css('display') == 'none'){
@@ -160,9 +160,11 @@ $('.feed').click(function(){
         }
     }else if ($('.cock').css('display') !== 'block' && $(this).css('filter') != 'brightness(0.2)'){
         $(this).css('filter', 'brightness(0.2)');
+        $('#info' + this.id).css('display', 'block');
         console.log('wow'); 
     }else if($(this).css('filter') == 'brightness(0.2)'){
         $(this).css('filter', 'brightness(1)');
+        $('#info' + this.id).css('display', 'none');
     }
 });
 

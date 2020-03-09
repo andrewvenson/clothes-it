@@ -18,7 +18,7 @@ class CreateItemsTable extends Migration
             $table->string('name');
             $table->float('price', 8, 2)->nullable();
             $table->string('tag')->nullable();
-            $table->string('color')->default('none'); 
+            $table->string('color')->default('none')->nullable(); 
             $table->string('type');
             $table->integer('private')->default('1');
             $table->integer('public')->default('0');

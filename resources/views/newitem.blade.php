@@ -80,7 +80,7 @@
             </div>
             
             <div style='margin-top:25px;'>
-                <select name="type" id="type" style='color:lightgray;border-radius: 5px; border-color: 1px solid #171717 !important;background-color: black;width: 150px;'>
+                <select name="type" id="type" style='color:lightgray;border-radius: 5px; border-color: 1px solid #171717 !important;background-color: black !important;width: 150px;'>
                     <option>Type</option>
                     @foreach($all_types as $type)
                         <option value="{{$type}}">{{$type}}</option>

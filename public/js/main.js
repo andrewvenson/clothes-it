@@ -233,9 +233,9 @@ function readURL(input) {
         var reader = new FileReader();
         
         reader.onload = function (e) {
-            $('#name').css('display', 'none');
+            $('#name').fadeOut(200);
             $('#itm-name').text($('#name').val());
-            $('#img-preview').css('display', 'block');
+            $('#img-preview').fadeIn(500);
             $('#preview').attr('src', e.target.result);
         }
         reader.readAsDataURL(input.files[0]);
@@ -247,8 +247,8 @@ $("#file-input").change(function(){
 });
 
 $('#cancel-item-inp').click(function(){
-    $('#img-preview').css('display', 'none');
-    $('#name').css('display', 'block');
+    $('#img-preview').fadeOut(100);
+    $('#name').fadeIn(100);
     $('#name').val(''); 
 });
 

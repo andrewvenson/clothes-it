@@ -160,7 +160,7 @@ $('.feed').click(function(){
         }
     }else if ($('.cock').css('display') !== 'block' && $(this).css('filter') != 'brightness(0.2)'){
         $(this).css('filter', 'brightness(0.2)');
-        console.log('wow');
+        console.log('wow'); 
     }else if($(this).css('filter') == 'brightness(0.2)'){
         $(this).css('filter', 'brightness(1)');
     }
@@ -235,6 +235,7 @@ function readURL(input) {
         reader.onload = function (e) {
             $('#name').fadeOut(200);
             $('#itm-name').text($('#name').val());
+            $('.image-upload').fadeOut(200); 
             $('#img-preview').fadeIn(500);
             $('#preview').attr('src', e.target.result);
         }
@@ -247,8 +248,9 @@ $("#file-input").change(function(){
 });
 
 $('#cancel-item-inp').click(function(){
-    $('#img-preview').fadeOut(100);
-    $('#name').fadeIn(100);
+    $('#img-preview').fadeOut(200);
+    $('.image-upload').fadeIn(100);
+    $('#name').fadeIn(200);
     $('#name').val(''); 
 });
 

@@ -153,7 +153,6 @@
     a{
         text-decoration:none !important;
         color: whitesmoke;
-        font-weight: bold;
         font-size: 16px;
     }
     

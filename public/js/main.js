@@ -48,7 +48,7 @@ $('#search-btn').click(function(){
         width: '275px',
     }, 500);
     $('#search-inp-btn').fadeIn(400);
-    $('.nav-title').css('display', 'none');
+    $('.nav-title').fadeOut(400);
     $('#search-close').css('display', 'block');
 });
 
@@ -59,8 +59,8 @@ $('#search-close').click(function(){
     }, 500);
     $('#search-inp').css('display', 'none');
     $('#search-inp-btn').fadeOut(100);
-    $('.nav-title').css('display', 'block');
-    $('#search-btn').css('display', 'block');
+    $('.nav-title').fadeIn(100);
+    $('#search-btn').fadeIn(500);
 });
 
 //hidden slide out button

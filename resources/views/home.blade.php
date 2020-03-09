@@ -23,9 +23,8 @@
         <a style="text-shadow: 3px 4px 8px black; width: 20px; height: 20px;border-radius: 50%;position:absolute; top:10px; left:50px;color:white;font-weight:bold;z-index:777">$programmerprod</a>
         <a  style='position:absolute;top:10px;right:5px;z-index:777;'><img style='width:18px; height: 18px;' src="images/star.png" alt=""></a>
 
-        <div id='info{{$item->id}}' style='position:absolute; top:100px;display:none;z-index: 666;'>
+        <div id='info{{$item->id}}' style='position:absolute; top:90px;display:none;z-index: 666;padding:10px;'>
             <p style='font-weight: bold;color:white;'>{{$item->description}}</p>
-            <p style='color:white'>wow</p>
         </div>
 
         <div style='overflow:hidden;' > 

@@ -23,7 +23,7 @@
         <a style="text-shadow: 3px 4px 8px black; width: 20px; height: 20px;border-radius: 50%;position:absolute; top:10px; left:50px;color:white;font-weight:bold;z-index:777">$programmerprod</a>
         <a  style='position:absolute;top:10px;right:5px;z-index:777;'><img style='width:18px; height: 18px;' src="images/star.png" alt=""></a>
 
-        <div id='info{{$item->id}}' style='position:absolute; top:90px;display:none;z-index: 666;padding:10px;'>
+        <div id='info{{$item->id}}' style='position:absolute; top:50px;display:none;z-index: 666;padding:10px;'>
             <p style='font-weight: bold;color:white;'>{{$item->description}}</p>
         </div>
 
@@ -47,7 +47,7 @@
                 </div>
                 
             </div>
-            <a style='color:white;text-decoration:none;position:absolute;bottom:35px;left:5px; text-shadow: 3px 4px 8px black;'><h4>{{$item->name}}</h4> </a>
+            <a style='color:white;text-decoration:none;position:absolute;bottom:35px;left:5px; text-shadow: 3px 4px 8px black;'><h4>{{$item->name}}<span id="money{{$item->id}}" style='display:none;font-weight: bold; color:#3e9c35;'>  ${{$item->price}}</span></h4></a>
 
             <a  style='position:absolute;bottom:45px;right:5px;'><img style='width:18px; height: 18px;' src="images/unlock.png" alt=""></a>
 

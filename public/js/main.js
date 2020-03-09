@@ -66,12 +66,28 @@ $('#search-close').click(function(){
 //hidden slide out button
 $('.closet-btn').click(function(){
     $('.closet-so').css('display', 'block');
+    $('.closet-so').animate({
+        width: "100%"
+    }, 400);
+
+    $('.newitem').fadeIn(400);
+    $('.filter').fadeIn(400);
+    $('.fit').fadeIn(400);
+    $('.organize').fadeIn(400);
+
     $(this).css('display', 'none');
 });
 
 //slide out tool
 $('.closet-so').click(function(){
     $('.closet-btn').css('display', 'block');
+    $('.closet-so').animate({
+        width: "0px"
+    }, 200);
+    $('.newitem').fadeOut(100);
+    $('.filter').fadeOut(100);
+    $('.fit').fadeOut(100);
+    $('.organize').fadeOut(100);
     $(this).css('display', 'none');
 });
 

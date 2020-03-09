@@ -13,7 +13,7 @@
 
         
 
-        <div style='position:fixed; top:80px;width: 100%;padding: 20px;overflow-y: scroll;height: 625px;'>
+        <div style='position:fixed; top:80px;width: 100%;padding: 20px;overflow-y: scroll;height: 650px;'>
             <input id='name' placeholder="Name" type="text" style='background-color: black;width: 100%;color:white'>
 
             <div id='img-preview' style='position:relative; display:none; width: 100%; height: 250px; box-shadow: 3px 4px 8px black; border-radius: 5px;filter:brightness(.5);'>
@@ -92,11 +92,10 @@
                 <label class="priv-pub-lbl custom-control-label" style='color: white;font-weight:bold;' for="publicprivate">Public</label>
             </div>
 
-            <div style='position:relative; margin-top:20px;'>
-                <button type='submit' style='position:absolute;right:0;bottom:5px;background:none; border:none; font-weight:bold;color:white;' disable='true'>Add to Closet</button>
-            </div>
-
+            
         </div>
+        <button type='submit' style='position:fixed;right:5px;bottom:55px;background:none; border:none;color:white;font-weight:600;font-size: 14px;' disabled>Add to Closet</button>
+
     </form>
     
 @endsection

@@ -25,7 +25,9 @@
                                 <p style="text-shadow: 3px 4px 8px black; width: 20px; height: 20px;position:absolute; top:5px; left:50px;color:white;font-weight:bold;">$programmerprod</p>
         
                         </div>
+                        <a style='float:right;'><img src="images/more.png" style='width:16px;height:16px;' alt=""></a>                
                 </div>
+
                 @endforeach
         </div>
 </div>

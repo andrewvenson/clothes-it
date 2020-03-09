@@ -3,7 +3,7 @@
 @section('content')
 
 
-<a style='right: 10px;position:fixed; top:55px;float;right;'><img src="images/settings.png" style='width:25px; height: 25px;' alt=""></a>
+<a style='right: 10px;position:fixed; top:55px;float;right;'><img src="images/settings.png" style='width:25px; height: 25px;filter:drop-shadow(2px 2px 5px #000);' alt=""></a>
 
 <div style='margin-top:80px;text-align:center;margin-bottom:30px;'>
 

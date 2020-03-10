@@ -16,12 +16,14 @@ class CreateItemsTable extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->float('price', 8, 2)->nullable();
+            $table->float('price', 8, 2)->default('0.00')->nullable();
+            $table->string('trade')->nullable();
+            $table->string('sell')->nullable();
             $table->string('tag')->nullable();
             $table->string('color')->default('none')->nullable(); 
             $table->string('type');
-            $table->integer('private')->default('1');
-            $table->integer('public')->default('0');
+            $table->string('private')->nullable();
+            $table->string('public')->nullable();
             $table->string('image')->nullable();
             $table->longText('description')->nullable();
 

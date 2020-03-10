@@ -57,9 +57,11 @@ class ClothController extends Controller
         $item = new Items();
 
         $item->name = request('name');
-        $item->private = 1;
-        $item->public = 0;
+        $item->private = request('private');
+        $item->public = request('public');
         $item->price = request('price');
+        $item->trade= request('trade');
+        $item->sell=request('sell');
         $item->color = request('color');
         $item->tag = request('tag');
         $item->image = $new_name;

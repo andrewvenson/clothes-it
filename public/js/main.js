@@ -213,9 +213,11 @@ $('.goldstr').click(function(){
 $('.priv-pub-inp').click(function(){
     if($(this).val() == 'public'){
         $(this).val("private");
+        $(this).attr("name", "private");
         $('.priv-pub-lbl').text("Private");
     }else{
         $(this).val("public");
+        $(this).attr("name", "public");
         $('.priv-pub-lbl').text("Public");
     }
 });
@@ -223,11 +225,13 @@ $('.priv-pub-inp').click(function(){
 $('.trade-sell-inp').click(function(){
     if($(this).val() == 'sell'){
         $(this).val("trade");
+        $(this).attr("name", "trade");
         $('.trade-sell-lbl').text("Trade");
         $('#item-price').css('display', 'none');
     }else{
         $(this).val("sell");
         $('.trade-sell-lbl').text("Sell");
+        $(this).attr("name", "sell");
         $('#item-price').css('display', 'block');
     }
 });

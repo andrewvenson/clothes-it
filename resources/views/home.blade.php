@@ -24,7 +24,26 @@
         <a  style='position:absolute;top:10px;right:5px;z-index:777;'><img style='width:18px; height: 18px;' src="images/star.png" alt=""></a>
 
         <div id='info{{$item->id}}' style='position:absolute; top:50px;display:none;z-index: 666;padding:10px;'>
-            <p style='font-weight: bold;color:white;'>{{$item->description}}</p>
+            <div class='row'>
+                <div class="col" style='padding:none !important;margin:none !important'>
+                    <a style='color:white; font-size: 12px;'>Type: <span>{{$item->type}}</span></a>
+                </div>
+                <div class="col" style='padding:none;'>
+                    <a style='color:white; font-size:12px;'>Color: <span>{{$item->color}}</span></a>
+                </div>
+                <div class="col">
+                    <a style='color:white; font-size:12px;'>Size: <span>{{$item->white}}</span></a>
+                </div> 
+            </div>
+            <p style='font-weight: bold;color:white;margin-top:10px;'>{{$item->description}}</p>
+
+            <button class='btn btn-warning'>Share</button>
+            <button class='btn btn-primary'>Save</button>
+            @if($item->sell == "sell")
+                <button class='btn btn-success'>Buy</button>
+            @else
+                <button class='btn btn-secondary'>Trade</button>
+            @endif
         </div>
 
         <div style='overflow:hidden;' > 
@@ -47,10 +66,15 @@
                 </div>
                 
             </div>
-            <a style='color:white;text-decoration:none;position:absolute;bottom:35px;left:5px; text-shadow: 3px 4px 8px black;'><h4>{{$item->name}}<span id="money{{$item->id}}" style='display:none;font-weight: bold; color:#3e9c35;'>  ${{$item->price}}</span></h4></a>
+            @if($item->sell == "sell")
+                <a style='color:white;text-decoration:none;position:absolute;bottom:35px;left:5px; text-shadow: 3px 4px 8px black;'><h4>{{$item->name}}<span id="money{{$item->id}}" style='display:none;font-weight: bold; color:#3e9c35;'>  ${{$item->price}}</span></h4></a>
+            @elseif($item->trade = "trade")
+                <a href="" style='text-decoration:none;position:absolute;bottom:35px;left:5px;'><h4>{{$item->name}}</h4><span id="money{{$item->id}}" style='display:none;'><img src="images/partnership.png" style='width:30px; height:30px;' alt=""></span></a>
+            @endif
 
-            <a  style='position:absolute;bottom:45px;right:5px;'><img style='width:18px; height: 18px;' src="images/unlock.png" alt=""></a>
-
+            @if($item->private == "private")
+                <a  style='position:absolute;bottom:45px;right:5px;'><img style='width:18px; height: 18px;' src="images/unlock.png" alt=""></a>
+            @endif
             <div class='item-bullet' id="bullet-{{$item->id}}" style="display:none;position:absolute;bottom:50%;right:45%;border:1px solid lightgray;background-color: lightgray; box-shadow: 3px 4px 8px #1c1b17; height: 25px; width: 25px;border-radius: 50%;"></div>
 
             <a class='more more-{{$item->id}}' id="{{$item->id}}" style='float:right;'><img src="images/more.png" style='width:16px;height:16px;' alt=""></a>                

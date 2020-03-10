@@ -13,16 +13,20 @@
 
         
 
-        <div style='position:fixed; top:80px;width: 100%;padding: 20px;overflow-y: scroll;height: 650px;'>
-            <input id='name' name='name' placeholder="Name" type="text" style='background-color: black;width: 100%;color:white;height:35px;'>
+        <div style=' margin-top:80px;width: 100%;padding: 20px;padding-bottom: 50px;overflow-y: scroll !important;min-height:500px;'>
+            
+            <div style='position:relative;'>
+                <input id='name' name='name' placeholder="Name" type="text" style='background-color: black;width: 100%;color:white;height:35px;'>
 
-            <div class="image-upload" style='text-align:center;position:fixed;top:103px;right:25px;'>
-                <label for="file-input">
-                    <img src="images/camera.png" style=' width: 30px; height: 30px;filter:drop-shadow(2px 2px 5px #000);'>
-                </label>
+                <div class="image-upload" style='text-align:center;position:absolute;top:2px;right:6px;'>
+                    <label for="file-input">
+                        <img src="images/camera.png" style=' width: 30px; height: 30px;filter:drop-shadow(2px 2px 5px #000);'>
+                    </label>
 
-                <input id="file-input" name='image' type="file" accept='image/*'>
+                    <input id="file-input" name='image' type="file" accept='image/*'>
+                </div>
             </div>
+            
 
             <div id='img-preview' style='position:relative; display:none; width: 100%; height: 250px; box-shadow: 3px 4px 8px black; border-radius: 5px;filter:brightness(.5);'>
                 <p id='itm-name' style='position:absolute; top: 5px; left: 5px; color: white; font-weight:bold; text-shadow: 3px 4px 8px #000;'>Name</p>
@@ -94,18 +98,18 @@
             </div>
             
             <div class="custom-control custom-switch" style='margin-top: 15px;'>
-                <input type="checkbox" class="trade-sell-inp custom-control-input" value='sell' id="tradesell" checked>
+                <input name='sell' type="checkbox" class="trade-sell-inp custom-control-input" value='sell' id="tradesell" checked>
                 <label class="trade-sell-lbl custom-control-label" style='color: white;font-weight:bold;' for="tradesell"><span>Sell</span></label><br>
                 <input id='item-price' type="number" name='price' style='margin-left: 5px;background-color: black; width: 100px;color:white;' placeholder='$0.00'>
             </div>
 
             <div class="custom-control custom-switch" style='margin-top: 15px;\'>
-                <input type="checkbox" name='privatepub' class="priv-pub-inp custom-control-input" value='public' id="publicprivate" checked>
+                <input name='public' type="checkbox" name='privatepub' class="priv-pub-inp custom-control-input" value='public' id="publicprivate" checked>
                 <label class="priv-pub-lbl custom-control-label" style='color: white;font-weight:bold;' for="publicprivate">Public</label>
             </div>
 
             <div style='margin-top:15px;'>
-                <input type="text" style='background-color:black; color:white;height:35px;' placeholder='Tag'>
+                <input name='tag' type="text" style='background-color:black; color:white;height:35px;' placeholder='Tag'>
             </div>
 
             

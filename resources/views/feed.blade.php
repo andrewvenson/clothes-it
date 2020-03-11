@@ -2,13 +2,7 @@
 
 @section('content')
 
-<div id='img-picker-nav'  style='width:100%;height:35px;display:none;text-align:center;background-color: black;position:fixed;top:25px;z-index:999;box-shadow: 3px 4px 8px black;opacity:.9;'>
-    <a data-toggle='modal' data-target="#fit" style="position:fixed; right: 5px;color:white;margin-top:5px; text-decoration:none; font-weight:bold;">Done</a>
-    <a id='itm-count' style="position:fixed;color:white;margin-top:8px;right:45%; text-decoration:none;font-size: 14px;"></a>
-    
-    <a class='cancel-picker' style="margin-top:5px;position:fixed; color:white; z-index:999;left: 5px; text-decoration:none; font-weight:bold;">Cancel</a>
-</div>
-<div class='container' style='overflow-y:scroll;height: 100%;margin-top:100px;'>
+<div class='container' style='overflow-y:scroll;height: 100%;margin-top:25px;'>
        
     @foreach($items as $item)
     <div style='position:relative;'>

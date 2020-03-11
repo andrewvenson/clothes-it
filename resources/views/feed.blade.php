@@ -6,7 +6,7 @@
        
     @foreach($items as $item)
 
-    @if($item->public == "1")
+    @if($item->publicprivate == "1")
     <div style='position:relative;'>
         <div style="background-image: url('images/black-batman.jpg'); background-size: cover; box-shadow: 3px 4px 8px black; position:absolute; top:0; left:-5px; !important;background-color: white; width: 50px; height: 50px; border-radius: 100%;z-index:666;"></div>
         <div style="background-color:orange; box-shadow: 3px 4px 8px black; width: 20px; height: 20px;border-radius: 50%;position:absolute; top:5; left:30px;z-index:777;"></div>

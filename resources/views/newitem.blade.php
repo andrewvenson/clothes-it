@@ -11,6 +11,12 @@
             <input type="text" style='display:none;'>
         </div>
 
+        @if($errors->any())
+            @foreach($errors->all() as $error)
+                <p style='color:white;'>{{$error}}</p>
+            @enforeach
+        @endif
+
         
 
         <div style=' margin-top:80px;width: 100%;padding: 20px;padding-bottom: 50px;overflow-y: scroll !important;min-height:500px;'>

@@ -11,7 +11,7 @@
         <a style="text-shadow: 3px 4px 8px black; width: 20px; height: 20px;border-radius: 50%;position:absolute; top:10px; left:50px;color:white;font-weight:bold;z-index:777">$programmerprod</a>
         <a  style='position:absolute;top:10px;right:5px;z-index:777;'><img style='width:18px; height: 18px;' src="images/star.png" alt=""></a>
 
-        <div id='info{{$item->id}}' style='position:absolute; top:50px;display:none;z-index: 666;padding:10px;width:82%;'>
+        <div id='info{{$item->id}}' style='position:absolute; top:65px;display:none;z-index: 666;padding:10px;width:82%;'>
 
             <div class='description-scroll' style='height:150px;overflow-y:scroll;'>
                 <p style='color:white;margin:0px;'>{{$item->description}}</p>

@@ -10,12 +10,18 @@
             <a class='goldstr' style='display:none;position:fixed; right: 10px; top: 55px;'><img src="images/goldstar.png" style='width:20px;height:20px;' alt=""></a>
             <input type="text" style='display:none;'>
         </div>
-
-        @if($errors->any())
+        
+        
+        <div style='margin-top:75px;'>
+            <ul>
+            @if($errors->any())
             @foreach($errors->all() as $error)
-                <p style='color:white;'>{{$error}}</p>
+                <li style='color:red;'>{{$error}}</li>
             @endforeach
         @endif
+            </ul>
+        </div>
+        
 
         
 

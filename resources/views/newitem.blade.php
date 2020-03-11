@@ -14,7 +14,7 @@
         @if($errors->any())
             @foreach($errors->all() as $error)
                 <p style='color:white;'>{{$error}}</p>
-            @enforeach
+            @endforeach
         @endif
 
         

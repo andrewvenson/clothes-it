@@ -87,6 +87,10 @@
         display: none;
     }
 
+    .description-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
     @media only screen and (min-width: 600px){
         .yay{
             display:none;

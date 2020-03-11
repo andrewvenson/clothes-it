@@ -165,11 +165,13 @@ $('.feed').click(function(){
     }else if ($('.cock').css('display') !== 'block' && $(this).css('filter') != 'brightness(0.2)'){
         $(this).css('filter', 'brightness(0.2)');
         $('#info' + this.id).css('display', 'block');
+        $('.edit' + this.id).css('display', 'block');
         $('#money' + this.id).css('display', 'block');
         console.log('wow'); 
     }else if($(this).css('filter') == 'brightness(0.2)'){
         $(this).css('filter', 'brightness(1)');
         $('#info' + this.id).css('display', 'none');
+        $('.edit' + this.id).css('display', 'none');
         $('#money' + this.id).css('display', 'none');
     }
 });

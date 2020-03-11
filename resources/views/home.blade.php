@@ -23,27 +23,17 @@
         <a style="text-shadow: 3px 4px 8px black; width: 20px; height: 20px;border-radius: 50%;position:absolute; top:10px; left:50px;color:white;font-weight:bold;z-index:777">$programmerprod</a>
         <a  style='position:absolute;top:10px;right:5px;z-index:777;'><img style='width:18px; height: 18px;' src="images/star.png" alt=""></a>
 
-        <div id='info{{$item->id}}' style='position:absolute; top:50px;display:none;z-index: 666;padding:10px;'>
-            <div class='row'>
-                <div class="col" style='padding:none !important;margin:none !important'>
-                    <a style='color:white; font-size: 12px;'>Type: <span>{{$item->type}}</span></a>
-                </div>
-                <div class="col" style='padding:none;'>
-                    <a style='color:white; font-size:12px;'>Color: <span>{{$item->color}}</span></a>
-                </div>
-                <div class="col">
-                    <a style='color:white; font-size:12px;'>Size: <span>{{$item->white}}</span></a>
-                </div> 
-            </div>
-            <p style='font-weight: bold;color:white;margin-top:10px;'>{{$item->description}}</p>
+        <div id='info{{$item->id}}' style='position:absolute; top:50px;display:none;z-index: 666;padding:10px;width:82%;'>
 
-            <button class='btn btn-warning'>Share</button>
-            <button class='btn btn-primary'>Save</button>
-            @if($item->sell == "sell")
-                <button class='btn btn-success'>Buy</button>
-            @else
-                <button class='btn btn-secondary'>Trade</button>
-            @endif
+            <div class='description-scroll' style='height:170px;overflow-y:scroll;'>
+                <p style='color:white;margin:0px;'>{{$item->description}}</p>
+            </div>
+
+            <a style='color:white; font-size: 12px;'>Type: <span>{{$item->type}}</span></a>
+            <a style='color:white; font-size:12px;'>Color: <span>{{$item->color}}</span></a>
+            <a style='color:white; font-size:12px;'>Size: <span>{{$item->size}}</span></a>
+                
+            
         </div>
 
         <div style='overflow:hidden;' > 
@@ -67,10 +57,27 @@
                 
             </div>
             @if($item->sell == "sell")
-                <a style='color:white;text-decoration:none;position:absolute;bottom:35px;left:5px; text-shadow: 3px 4px 8px black;'><h4>{{$item->name}}<span id="money{{$item->id}}" style='display:none;font-weight: bold; color:#3e9c35;'>  ${{$item->price}}</span></h4></a>
+                <div style='position:absolute; left:5px;bottom:35px;width:250px;'>
+                    <a href="" style='text-decoration:none;font-weight:bold; text-shadow: 3px 4px 6px black;font-size:20px;'>{{$item->name}}</a>
+                    <a class='edit{{$item->id}}' href="" style='font-weight:bold; font-size:22px;color:forestgreen;text-shadow: 2px 2px 4px black;display:none;'>${{$item->price}}</a>
+
+                </div>
+
             @elseif($item->trade = "trade")
-                <a href="" style='text-decoration:none;position:absolute;bottom:35px;left:5px;'><h4>{{$item->name}}</h4><span id="money{{$item->id}}" style='display:none;'><img src="images/partnership.png" style='width:30px; height:30px;' alt=""></span></a>
+
+                <div style='position:absolute; left:5px;bottom:35px;width:250px;'>
+                    <a href="" style='text-decoration:none;font-weight:bold; text-shadow: 3px 4px 6px black;font-size:20px;'>{{$item->name}}</a>
+                    <img class='edit{{$item->id}}' src="images/partnership.png" style='width:35px; height:35px;display:none;' alt="">  
+
+                </div>
+        
             @endif
+
+            <div class='edit{{$item->id}}' style='position:absolute; bottom:125px;right: 0px;display:none;'>
+                <button class='btn-sm btn-warning float-right' style='margin:5px;'>Share</button><br>
+                <button class='btn-sm btn-primary float-right' style='width:53px;margin:5px;'>Save</button><br>
+                <button class='btn-sm btn-secondary float-right' style='margin:5px;'>Trade</button><br>
+            </div>
 
             @if($item->publicprivate == "0")
                 <a  style='position:absolute;bottom:45px;right:5px;'><img style='width:18px; height: 18px;' src="images/unlock.png" alt=""></a>
@@ -89,9 +96,6 @@
 </div>
 
 @include('partials.slideout')
-
-
-
 
 @endsection
 

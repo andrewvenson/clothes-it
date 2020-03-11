@@ -12,7 +12,7 @@
         </div>
         
         
-        <div style='margin-top:75px;'>
+        <div style='position:fixed; top:75px;'>
             <ul>
             @if($errors->any())
             @foreach($errors->all() as $error)

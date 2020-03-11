@@ -65,15 +65,16 @@ $('#search-close').click(function(){
 
 //hidden slide out button
 $('.closet-btn').click(function(){
-    $('.closet-so').css('display', 'block');
+    // $('.closet-so').css('display', 'block');
+    
     $('.closet-so').animate({
         width: "100%"
-    }, 400);
+    }, 200);
 
-    $('.newitem').fadeIn(400);
-    $('.filter').fadeIn(400);
-    $('.fit').fadeIn(400);
-    $('.organize').fadeIn(400);
+    $('.newitem').fadeIn(500);
+    $('.filter').fadeIn(500);
+    $('.fit').fadeIn(500);
+    $('.organize').fadeIn(500);
 
     $(this).css('display', 'none');
 });
@@ -81,6 +82,7 @@ $('.closet-btn').click(function(){
 //slide out tool
 $('.closet-so').click(function(){
     $('.closet-btn').css('display', 'block');
+
     $('.closet-so').animate({
         width: "0px"
     }, 200);

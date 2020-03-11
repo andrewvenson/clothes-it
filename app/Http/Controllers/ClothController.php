@@ -47,7 +47,7 @@ class ClothController extends Controller
             'name' => 'required',
 
         ]);
-
+        
         $image = $request->file('image');
 
         $new_name = time().'.'.$image->getClientOriginalExtension();
@@ -56,9 +56,17 @@ class ClothController extends Controller
 
         $item = new Items();
 
+
+
         $item->name = request('name');
-        $item->private = request('private');
-        $item->public = request('public');
+
+
+        if(request('publicprivate') == "public"){
+            $item->publicprivate = "1";
+        }else{
+            $item->publicprivate = "0";
+        }
+        
         $item->price = request('price');
         $item->trade= request('trade');
         $item->sell=request('sell');

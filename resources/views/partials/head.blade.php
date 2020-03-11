@@ -104,6 +104,11 @@
         display: none;
     }
 
+    .container::-webkit-scrollbar {
+        display: none !important;
+    }
+
+
     .row{
         margin:0px !important;
     }

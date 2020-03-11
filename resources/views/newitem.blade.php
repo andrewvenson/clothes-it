@@ -4,7 +4,7 @@
     <form action="/" method='post' enctype="multipart/form-data" >   
         @csrf
 
-        <div>
+        <div style='z-index:9999999'>
             <a href="/" style='position:fixed; left:10px; top:55px;'><img src="images/popleft.png" style='width:20px;height:20px;' alt=""></a>
             <a class='emptystr' style='position:fixed; right: 10px; top: 55px;'><img src="images/star.png" style='width:20px;height:20px;' alt=""></a>
             <a class='goldstr' style='display:none;position:fixed; right: 10px; top: 55px;'><img src="images/goldstar.png" style='width:20px;height:20px;' alt=""></a>
@@ -115,8 +115,8 @@
                 <input id='item-price' type="number" name='price' style='margin-left: 5px;background-color: black; width: 100px;color:white;' placeholder='$0.00'>
             </div>
 
-            <div class="custom-control custom-switch" style='margin-top: 15px;\'>
-                <input name='public' type="checkbox" name='privatepub' class="priv-pub-inp custom-control-input" value='public' id="publicprivate" checked>
+            <div class="custom-control custom-switch" style='margin-top: 15px;'>
+                <input name='publicprivate' type="checkbox" class="priv-pub-inp custom-control-input" value='public' id="publicprivate" checked>
                 <label class="priv-pub-lbl custom-control-label" style='color: white;font-weight:bold;' for="publicprivate">Public</label>
             </div>
 

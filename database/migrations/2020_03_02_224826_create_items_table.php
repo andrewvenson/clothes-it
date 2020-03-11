@@ -22,8 +22,7 @@ class CreateItemsTable extends Migration
             $table->string('tag')->nullable();
             $table->string('color')->default('none')->nullable(); 
             $table->string('type');
-            $table->string('private')->nullable();
-            $table->string('public')->nullable();
+            $table->string('publicprivate');
             $table->string('image')->nullable();
             $table->longText('description')->nullable();
 

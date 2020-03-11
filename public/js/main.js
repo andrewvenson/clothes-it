@@ -213,11 +213,9 @@ $('.goldstr').click(function(){
 $('.priv-pub-inp').click(function(){
     if($(this).val() == 'public'){
         $(this).val("private");
-        $(this).attr("name", "private");
         $('.priv-pub-lbl').text("Private");
     }else{
         $(this).val("public");
-        $(this).attr("name", "public");
         $('.priv-pub-lbl').text("Public");
     }
 });

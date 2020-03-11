@@ -72,7 +72,7 @@
                 <a href="" style='text-decoration:none;position:absolute;bottom:35px;left:5px;'><h4>{{$item->name}}</h4><span id="money{{$item->id}}" style='display:none;'><img src="images/partnership.png" style='width:30px; height:30px;' alt=""></span></a>
             @endif
 
-            @if($item->private == "private")
+            @if($item->publicprivate == "0")
                 <a  style='position:absolute;bottom:45px;right:5px;'><img style='width:18px; height: 18px;' src="images/unlock.png" alt=""></a>
             @endif
             <div class='item-bullet' id="bullet-{{$item->id}}" style="display:none;position:absolute;bottom:50%;right:45%;border:1px solid lightgray;background-color: lightgray; box-shadow: 3px 4px 8px #1c1b17; height: 25px; width: 25px;border-radius: 50%;"></div>

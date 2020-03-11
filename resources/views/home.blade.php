@@ -29,10 +29,6 @@
                 <p style='color:white;margin:0px;'>{{$item->description}}</p>
             </div>
 
-            <a style='color:white; font-size: 12px;'>Type: <span>{{$item->type}}</span></a>
-            <a style='color:white; font-size:12px;'>Color: <span>{{$item->color}}</span></a>
-            <a style='color:white; font-size:12px;'>Size: <span>{{$item->size}}</span></a>
-                
             
         </div>
 
@@ -78,6 +74,16 @@
                 <button class='btn-sm btn-primary float-right' style='width:53px;margin:5px;'>Save</button><br>
                 <button class='btn-sm btn-secondary float-right' style='margin:5px;width:53px;'>Trade</button><br>
             </div>
+
+            <div class='edit{{$item->id}}' style='position:absolute; bottom:40px; right:100px; display:none;'>
+                <a style='color:white; font-size: 12px;'>Type: <span>{{$item->type}}</span></a>
+                <a href="">|</a>
+                <a style='color:white; font-size:12px;'>Color: <span>{{$item->color}}</span></a>
+                <a href="">|</a>
+                <a style='color:white; font-size:12px;'>Size: <span>{{$item->size}}</span></a>
+            </div>
+            
+            
 
             @if($item->publicprivate == "0")
                 <a  style='position:absolute;bottom:45px;right:5px;'><img style='width:18px; height: 18px;' src="images/unlock.png" alt=""></a>

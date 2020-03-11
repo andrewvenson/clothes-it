@@ -75,7 +75,7 @@
                 <button class='btn-sm btn-secondary float-right' style='margin:5px;width:53px;'>Trade</button><br>
             </div>
 
-            <div class='edit{{$item->id}}' style='position:absolute; bottom:40px; right:100px; display:none;'>
+            <div class='edit{{$item->id}}' style='position:absolute; bottom:40px; right:50px; display:none;'>
                 <a style='color:white; font-size: 12px;'>Type: <span>{{$item->type}}</span></a>
                 <a href="">|</a>
                 <a style='color:white; font-size:12px;'>Color: <span>{{$item->color}}</span></a>

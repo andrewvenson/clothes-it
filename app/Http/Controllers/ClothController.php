@@ -67,10 +67,22 @@ class ClothController extends Controller
             $item->publicprivate = "0";
         }
         
-        $item->price = request('price');
+
+        if(request('price') == null){
+            $item->price = 0.00;
+        }else{
+            $item->price = request('price');
+        }
+
         $item->trade= request('trade');
         $item->sell=request('sell');
-        $item->color = request('color');
+
+        if(request('color') == null){
+            $item->color = 'none';
+        }else{
+            $item->color = request('color');
+        }
+
         $item->tag = request('tag');
         $item->image = $new_name;
         $item->type = request('type');

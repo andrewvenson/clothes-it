@@ -25,7 +25,7 @@
 
         <div id='info{{$item->id}}' style='position:absolute; top:50px;display:none;z-index: 666;padding:10px;width:82%;'>
 
-            <div class='description-scroll' style='height:170px;overflow-y:scroll;'>
+            <div class='description-scroll' style='height:150px;overflow-y:scroll;'>
                 <p style='color:white;margin:0px;'>{{$item->description}}</p>
             </div>
 
@@ -74,9 +74,9 @@
             @endif
 
             <div class='edit{{$item->id}}' style='position:absolute; bottom:125px;right: 0px;display:none;'>
-                <button class='btn-sm btn-warning float-right' style='margin:5px;'>Share</button><br>
+                <button class='btn-sm btn-warning float-right' style='margin:5px;width:53px;'>Share</button><br>
                 <button class='btn-sm btn-primary float-right' style='width:53px;margin:5px;'>Save</button><br>
-                <button class='btn-sm btn-secondary float-right' style='margin:5px;'>Trade</button><br>
+                <button class='btn-sm btn-secondary float-right' style='margin:5px;width:53px;'>Trade</button><br>
             </div>
 
             @if($item->publicprivate == "0")

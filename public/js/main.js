@@ -65,7 +65,7 @@ $('#search-close').click(function(){
 
 //hidden slide out button
 $('.closet-btn').click(function(){
-    // $('.closet-so').css('display', 'block');
+    $('.closet-so').css('display', 'block');
     
     $('.closet-so').animate({
         width: "100%"
@@ -86,6 +86,8 @@ $('.closet-so').click(function(){
     $('.closet-so').animate({
         width: "0px"
     }, 200);
+
+
     $('.newitem').fadeOut(100);
     $('.filter').fadeOut(100);
     $('.fit').fadeOut(100);

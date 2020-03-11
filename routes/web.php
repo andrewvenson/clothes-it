@@ -38,3 +38,5 @@ Route::get('/login', function(){
 });
 
 Route::get('/newitem', 'ClothController@itemForm');
+
+Route::get('/feed', "FeedController@feed");
